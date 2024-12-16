@@ -1,9 +1,12 @@
-require("items");
-require("blocks");
-require("productionBlocks");
-//require("powerBlocks");
-require("vanilla");
-require("bullets");
+require("content/items/items");
+//require("content/blocks/blocks");
+require("content/blocks/productionBlocks");
+//require("content/blocks/powerBlocks");
+require("content/blocks/vanilla");
+require("content/misc/bullets");
 
-require("contentLoader");
-require("tech");
+require("content/tech/contentLoader");
+require("content/tech/tech");
+
+require("ui/ui");
+require("autoUpdater");
