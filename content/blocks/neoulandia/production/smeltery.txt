@@ -1,0 +1,47 @@
+{
+  "localizedName": "Mass Smeltery",
+  "description": "Processes raw ore to separate mineral particles.",
+  "type": "Separator",
+  "health": 80,
+  "size": 2,
+
+  "hasPower": true,
+  "hasLiquids": true,
+  "hasItems": true,
+  "craftTime": 275,
+  "itemCapacity": 18,
+  "updateEffect": "steam",
+  "craftEffect": "smoke",
+  "results": [
+    "tin/2",
+    "alumin/2",
+    "silver/1"
+  ],
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawFade"
+      }
+    ]
+  },
+
+  "consumes": {
+    "power": 4,
+    "liquid": "slag/0.166666666666666666666"
+  },
+
+  "requirements": [
+    "tin/80",
+    "alumin/50",
+    "silver/100"
+  ],
+  "category": "crafting",
+  "research": "refinery",
+  "researchCost": [
+    "research-materia1/1"
+  ]
+}

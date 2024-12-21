@@ -2,7 +2,7 @@
   "planet": "Neoulandia",
   "sector": 38,
   "difficulty": 4,
-  "alwaysUnlocked": true,
+  "alwaysUnlocked": false,
   "captureWave": 20,
 
   "allowLaunchLoadout": true,
