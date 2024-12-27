@@ -8,7 +8,7 @@
   "hasPower": true,
   "hasLiquids": true,
   "hasItems": true,
-  "craftTime": 275,
+  "craftTime": 125,
   "itemCapacity": 18,
   "updateEffect": "steam",
   "craftEffect": "smoke",
