@@ -1,0 +1,26 @@
+{
+  "localizedName": "Nickel Battery",
+  "description": "A low voltage battery.",
+  "type": "Battery",
+  "health": 25,
+  "size": 1,
+
+  "hasPower": true,
+  "hasShadow": "false",
+
+  "outputsPower": "true",
+  "consumes": {
+    "powerBuffered": 1500
+  },
+
+  "requirements": [
+    "nickel/3",
+    "alumin/1"
+  ],
+
+  "research": "transmission-node",
+  "category": "power",
+  "researchCost": [
+    "research-materia2/1"
+  ]
+}

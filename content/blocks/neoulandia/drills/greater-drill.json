@@ -1,0 +1,37 @@
+{
+  "localizedName": "Greater Extractor",
+  "description": "A larger drill with specialized extraction capabilities.",
+  "health": 120,
+  "type": "drill",
+  "size": 3,
+
+  "tier": 3,
+  "drillTime": 45,
+  "warmupSpeed": 0.00025,
+  "rotateSpeed": 4,
+  "liquidBoostIntensity": 1.5,
+  "hardnessDrillMultiplier": 0.75,
+  "hasPower": true,
+  "hasLiquids": true,
+  "consumes": {
+    "power": 2.25,
+    "liquid": {
+      "liquid": "water",
+      "amount": 0.5,
+      "optional": true,
+      "booster": true
+    }
+  },
+
+  "requirements": [
+    "m-part/6",
+    "tin/14",
+    "silver/8"
+  ],
+
+  "category": "production",
+  "research": "middle-drill",
+  "researchCost": [
+    "research-materia2/1"
+  ]
+}
