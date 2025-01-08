@@ -10,7 +10,7 @@
 
   "outputsPower": "true",
   "consumes": {
-    "powerBuffered": 1500
+    "powerBuffered": 5000
   },
 
   "requirements": [

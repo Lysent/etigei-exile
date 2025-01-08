@@ -1,15 +1,15 @@
 {
   "localizedName": "Greater Extractor",
-  "description": "A larger drill with specialized extraction capabilities.",
+  "description": "A larger drill with specialized extraction capabilities. Can be cooled to a greater extent than previous generations.",
   "health": 120,
   "type": "drill",
   "size": 3,
 
   "tier": 3,
-  "drillTime": 45,
+  "drillTime": 130,
   "warmupSpeed": 0.00025,
   "rotateSpeed": 4,
-  "liquidBoostIntensity": 1.5,
+  "liquidBoostIntensity": 1.55,
   "hardnessDrillMultiplier": 0.75,
   "hasPower": true,
   "hasLiquids": true,
