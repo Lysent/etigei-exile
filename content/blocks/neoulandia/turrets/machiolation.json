@@ -1,0 +1,66 @@
+{
+  "localizedName": "Machicoulis",
+  "description": "Close quarters automated defence system.",
+  "details": "First tier turret use of ammunition. Inefficient use of defence parts as ammunition.",
+  "type": "itemTurret",
+  "health": 150,
+  "size": 2,
+
+  "targetAir": true,
+  "targetGround": true,
+  "reload": 4,
+  "shots": 3,
+  "range": 95,
+  "inaccuracy": 0,
+  "shootSound": "bang",
+
+  "ammoTypes": {
+    "alumin": {
+      "type": "FlakBulletType",
+      "speed": 3,
+      "lifetime": 25,
+      "damage": 20,
+      "width": 1,
+      "height": 1,
+      "buildingDamageMultiplier": 0.01,
+      "ammoMultiplier": 2
+    },
+    "silicon": {
+      "type": "FlakBulletType",
+      "speed": 5,
+      "lifetime": 19,
+      "damage": 25,
+      "width": 2,
+      "height": 4,
+      "buildingDamageMultiplier": 0.01,
+      "ammoMultiplier": 1,
+
+      "homingPower": 0.01
+    },
+    "d-part": {
+      "type": "FlakBulletType",
+      "speed": 5,
+      "lifetime": 19,
+      "damage": 40,
+      "width": 1,
+      "height": 1,
+      "buildingDamageMultiplier": 0.01,
+      "ammoMultiplier": 5,
+
+      "splashDamage": 2.5,
+      "splashDamageRadius": 3
+    }
+  },
+
+  "requirements": [
+    "tin/65",
+    "alumin/35",
+    "silver/45"
+  ],
+  
+  "category": "turret",
+  "research": "battlement",
+  "researchCost": [
+    "research-materia1/1"
+  ]
+}

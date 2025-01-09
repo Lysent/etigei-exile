@@ -1,0 +1,43 @@
+{
+  "localizedName": "Redan",
+  "description": "Shorter range variant of the Redoubt turret.",
+  "details": "Second tier turret. Use of significant power as ammunition.",
+  "type": "LaserTurret",
+  "health": 150,
+  "size": 2,
+
+  "targetAir": true,
+  "targetGround": true,
+  "reload": 10,
+  "recoil": 2,
+  "shake": 2,
+  "range": 150,
+  "inaccuracy": 1,
+  "shootSound": "laserbig",
+  "firingMoveFract": 1,
+  "shootDuration": 500,
+
+  "consumes": {
+    "power": 4
+  },
+
+  "shootType": {
+      "type": "ContinuousLaserBulletType",
+      "length": 150,
+      "hitColor": "c90d00",
+      "width": 1.5,
+      "drawSize": 15
+  },
+
+  "requirements": [
+    "d-part/125",
+    "tin/35",
+    "platinum/45"
+  ],
+  
+  "category": "turret",
+  "research": "redoubt",
+  "researchCost": [
+    "research-materia1/1"
+  ]
+}
