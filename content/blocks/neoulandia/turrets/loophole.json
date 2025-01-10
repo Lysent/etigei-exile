@@ -1,7 +1,7 @@
 {
   "localizedName": "Loophole",
   "description": "Utilises laser technology to prematurely detonate enemy projectiles.",
-  "details": "First tier turret use of ammunition. Inefficient use of defence parts as ammunition.",
+  "details": "Second tier turret. Use of significant power as ammunition.",
   "type": "PointDefenseTurret",
   "health": 150,
   "size": 2,
@@ -25,6 +25,6 @@
   "category": "turret",
   "research": "battlement",
   "researchCost": [
-    "research-materia1/1"
+    "research-materia2/1"
   ]
 }
