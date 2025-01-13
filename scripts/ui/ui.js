@@ -34,7 +34,7 @@ const NewsDialog = () => {
 	};
 
 	const loadBody = (news) => {
-		dialog.cont.image(Core.atlas.find("etigeox-sprite", Core.atlas.find("clear")))
+		dialog.cont.image(Core.atlas.find("etigeox-banner", Core.atlas.find("clear")))
 			.height(Vars.mobile ? 144 : 185).width(Vars.mobile ? 480 : 620).pad(3).center()
 			.row();
 
