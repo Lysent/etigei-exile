@@ -1,2 +1,2 @@
 [gray] 13/01/2025
-[white] Created news :)
+[white] - Added startup UI

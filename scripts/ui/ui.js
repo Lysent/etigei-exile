@@ -12,7 +12,7 @@ const NewsDialog = () => {
 
 	const
 		urlNews = "https://raw.githubusercontent.com/Lysent/etigei-exile/refs/heads/main/news/" + Core.bundle.get("etigeox.news.file"),
-		urlDiscord = "",
+		urlDiscord = "https://discord.com/invite/TJKZgr6UDg",
 		urlWiki = "",
 		urlGithub = "https://github.com/Lysent/etigei-exile";
 
@@ -48,7 +48,7 @@ const NewsDialog = () => {
 			dialog.cont.row();
 
 			dialog.cont["table(arc.func.Cons)"](t => {
-				t.defaults().size(128, 64).pad(3);
+				t.defaults().size(148, 64).pad(3);
 
 				t.button("Discord", Icon.discord, linkButton(urlDiscord));
 				t.button("Wiki", Icon.book, linkButton(urlWiki));

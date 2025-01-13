@@ -6,7 +6,7 @@ Establish colonies on the frozen planet of Neoulandia and experience destructibl
 
 Rubiginosus presents a collection of hardcore maps, inspired by Rusted Warfare, initially designed for multiplayer using Serpulo and Erekir technology. These missions have been retrofitted for a campaign experience with unique challenges for each map.
 
-## **Join the Community**
+## **Discord**
 Found a bug? Have suggestions? Want to connect with whatever we have of a community? Join the [**Discord**](https://discord.com/invite/TJKZgr6UDg)   server.
 
 ## **Development Roadmap**
