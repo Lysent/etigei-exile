@@ -1,10 +1,10 @@
 {
   "name": "etigeox",
   "displayName": "Etigei Exile",
-  "author": "[[]lime]Mitemi[[]white], [[]cyan]Tikup",
+  "author": "[[]lime]Mitemi[[]white] & [[]cyan]Tikup",
   "description": "Etigei Exilium offers a fresh and uniquely creative modded experience, featuring two planets and campaigns through 18 sectors. \n\nEstablish colonies on the frozen planet of [[]sky]Neoulandia[[]white] and experience destructible trees, limited resources, excessive use of unit cargo, and unique map design. Neoulandia brings economy-based map to offer diverging gameplay on top of the classical survival and attack maps. \n\n[[]orange]Rubiginosus[[]white] presents a collection of hardcore maps, inspired by Rusted Warfare, initially designed for multiplayer using Serpulo and Erekir technology. These missions have been retrofitted for a campaign experience with unique challenges for each map.\n\n[[]blue]Discord: https://discord.com/invite/TJKZgr6UDg",
   "subtitle": "Centrism is fun",
   "repo": "Lysent/etigei-exile",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "minGameVersion": "146"
 }
