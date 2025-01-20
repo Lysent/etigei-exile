@@ -1,0 +1,14 @@
+{
+  "localizedName": "Research Materials",
+  "type": "Block",
+  "breakable": true,
+  "hidden": true,
+  "alwaysReplace": false,
+  "buildVisibility": "editorOnly",
+  "hasShadow": "false",
+
+  "category": "effect",
+  "requirements": [
+    "research-materia2/4"
+  ]
+}

@@ -7,5 +7,6 @@
   "breakable": false,
   "hidden": true,
   "alwaysReplace": false,
-  "buildVisibility": "editorOnly"
+  "buildVisibility": "editorOnly",
+  "category": "effect"
 }

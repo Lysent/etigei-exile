@@ -1,0 +1,30 @@
+{
+  "localizedName": "Repairer Eins",
+  "description": "Repairs blocks.",
+  "details": "Sourced from a prototype of the German Military designed shortly after the Third Etigeox War.",
+  "type": "MendProjector",
+  "color": "84f491",
+
+  "health": 500,
+  "size": 1,
+  "hasPower": true,
+  "healPercent": 4,
+  "useTime": 400,
+  "reload": 250,
+  "range": 75,
+  "consumes": {
+    "power": 1
+  },
+  
+  "requirements": [
+    "d-part/6",
+    "platinum/10"
+  ],
+  "category": "effect",
+  "research": {
+    "parent": "hesco"
+  },
+  "researchCost": [
+    "research-materia2/1"
+  ]
+}
