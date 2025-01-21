@@ -12,7 +12,7 @@
   "shots": 2,
   "range": 125,
   "inaccuracy": 1,
-  "shootSound": "lasershoot",
+  "shootSound": "bang",
 
   "ammoTypes": {
     "tin": {

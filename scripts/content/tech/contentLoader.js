@@ -12,7 +12,7 @@ const preload = (type, filename) => {
 	const folder = contentRoot.child(lower + (lower.endsWith("s") ? "" : "s"));
 	const files = folder.findAll(l => l.nameWithoutExtension() == filename);
 
-	files.forEach(file => bootlegparser.parse(loadedMod, file.nameWithoutExtension(), file.readString("UTF-8"), file, type));
+	files.each(file => bootlegparser.parse(loadedMod, file.nameWithoutExtension(), file.readString("UTF-8"), file, type));
 };
 
 

@@ -1,3 +1,5 @@
+<img src="https://cdn.discordapp.com/attachments/643550846315003944/1328480921975914661/IMG_4929.png?ex=6786dbc5&is=67858a45&hm=367af00efe763e91f86e6f1b352c29b912c950d226e2b10313aba3a732443b3e&"/>
+
 ## **Etigei Exilium**
 
 Succesor to the defunct and incomplete v6 Etigeox mod. After four years of intermittent development, the latest iteration of the Etigeox mod has finally released! Etigei Exile offers a fresh and uniquely creative modded experience, featuring two planets and campaigns through 18 sectors. 
@@ -6,7 +8,7 @@ Establish colonies on the frozen planet of Neoulandia and experience destructibl
 
 Rubiginosus presents a collection of hardcore maps, inspired by Rusted Warfare, initially designed for multiplayer using Serpulo and Erekir technology. These missions have been retrofitted for a campaign experience with unique challenges for each map.
 
-## **Join the Community**
+## **Discord**
 Found a bug? Have suggestions? Want to connect with whatever we have of a community? Join the [**Discord**](https://discord.com/invite/TJKZgr6UDg)   server.
 
 ## **Development Roadmap**

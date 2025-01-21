@@ -5,8 +5,8 @@
   
   "health": 190,
   "size": 1,
-  "speed": 0.33,
-  "displaySpeed": 0.27,
+  "speed": 0.4,
+  "displayedSpeed": 55,
   "junctionReplacement": "etigeum-junction",
   "bridgeReplacement": "etigeum-bridge",
 

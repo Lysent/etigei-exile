@@ -1,0 +1,52 @@
+{
+  "localizedName": "Mineral Purifier",
+  "description": "Processes larger ore clumps into refined particles.",
+  "health": 80,
+  "size": 3,
+  "configurable": true,
+
+  "hasPower": true,
+  "hasLiquids": false,
+  "hasItems": true,
+  "craftTime": 225,
+  "itemCapacity": 32,
+  "updateEffect": "steam",
+  "craftEffect": "smoke",
+  "outputItems": [
+    "nickel/3",
+    "platinum/2"
+  ],
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawFade"
+      }
+    ]
+  },
+
+  "consumes": {
+    "power": 2.5,
+    "items": {
+      "items": [
+        "greater-ore/5"
+      ]
+    },
+    "liquid": "slag/1"
+  },
+  "heatRequirement": 2.5,
+
+  "requirements": [
+    "tin/30",
+    "alumin/30",
+    "silver/30"
+  ],
+  "category": "crafting",
+  "research": "refinery",
+  "researchCost": [
+    "research-materia2/1"
+  ]
+}

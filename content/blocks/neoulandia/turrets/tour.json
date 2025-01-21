@@ -12,17 +12,17 @@
   "shots": 8,
   "range": 182,
   "inaccuracy": 10,
-  "shootSound": "lasershoot",
+  "shootSound": "bang",
   
   "ammoTypes": {
     "alumin": {
       "type": "FlakBulletType",
       "speed": 2.5,
       "lifetime": 72.5,
-      "damage": 25,
+      "damage": 75,
       "width": 1.5,
       "height": 1.5,
-      "splashDamage": 10,
+      "splashDamage": 20,
       "splashDamageRadius": 20,
       "ammoMultiplier": 6
     },
@@ -30,10 +30,10 @@
       "type": "FlakBulletType",
       "speed": 2.8,
       "lifetime": 65,
-      "damage": 40,
+      "damage": 70,
       "width": 2,
       "height": 2,
-      "splashDamage": 18,
+      "splashDamage": 45,
       "splashDamageRadius": 25.5,
       "ammoMultiplier": 12
     }

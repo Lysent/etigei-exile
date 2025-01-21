@@ -1,0 +1,30 @@
+{
+  "localizedName": "Loophole",
+  "description": "Utilises laser technology to prematurely detonate enemy projectiles.",
+  "details": "Second tier turret. Use of significant power as ammunition.",
+  "type": "PointDefenseTurret",
+  "health": 150,
+  "size": 2,
+
+  "hasPower": "true",
+  "reload": 10,
+  "shootLength": 50,
+  "range": 140,
+  "bulletDamage": 30,
+
+  "consumes": {
+    "power": 2.5
+  },
+
+  "requirements": [
+    "d-part/15",
+    "platinum/35",
+    "silver/45"
+  ],
+  
+  "category": "turret",
+  "research": "battlement",
+  "researchCost": [
+    "research-materia2/1"
+  ]
+}

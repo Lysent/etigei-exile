@@ -1,0 +1,48 @@
+{
+  "localizedName": "Slag Smeltery",
+  "description": "Smelts raw ore into delicious slag.",
+  "type": "GenericCrafter",
+  "health": 20,
+  "size": 1,
+
+  "hasPower": true,
+  "hasLiquids": true,
+  "hasItems": true,
+  "craftTime": 75,
+  "itemCapacity": 8,
+  "updateEffect": "steam",
+  "craftEffect": "smoke",
+
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawFade"
+      }
+    ]
+  },
+
+  "consumes": {
+    "power": 4,
+    "items": {
+      "items": [
+        "raw-ore/5"
+      ]
+    }
+  },
+  "outputLiquid": "slag/0.3",
+
+  "requirements": [
+    "tin/20",
+    "alumin/15",
+    "silver/20"
+  ],
+  "category": "crafting",
+  "research": "mini-heater",
+  "researchCost": [
+    "research-materia1/1"
+  ]
+}

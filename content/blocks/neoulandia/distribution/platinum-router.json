@@ -1,0 +1,22 @@
+{
+  "localizedName": "Platinum Router",
+  "description": "Despite what most people might think, the platinum distribution series are not made of solid platinum.",
+  "type": "Router",
+
+  "health": 10,
+  "size": 1,
+  "speed": 0.1,
+  "itemCapacity": 6,
+  
+  "requirements": [
+    "t-part/2",
+    "platinum/2"
+  ],
+  "category": "distribution",
+  "research": {
+    "parent": "platinum-conveyor"
+  },
+  "researchCost": [
+    "research-materia2/1"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "localizedName": "Platinum Junction",
+  "description": "Uselessly junctioned. Actually slower than Etigeum Interduct.",
+  "type": "Junction",
+
+  "health": 190,
+  "size": 1,
+  "speed": 33,
+  "itemCapacity": 100,
+  
+  "requirements": [
+    "t-part/2",
+    "platinum/2"
+  ],
+  "category": "distribution",
+  "research": {
+    "parent": "platinum-conveyor"
+  },
+  "researchCost": [
+    "research-materia2/1"
+  ]
+}

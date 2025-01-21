@@ -1,0 +1,44 @@
+{
+  "localizedName": "Redoubt",
+  "description": "Dissuation.",
+  "details": "Second tier turret. Use of significant power as ammunition.",
+  "type": "LaserTurret",
+  "health": 150,
+  "size": 2,
+
+  "targetAir": true,
+  "targetGround": true,
+  "reload": 2,
+  "recoil": 2,
+  "shake": 2,
+  "range": 200,
+  "inaccuracy": 1,
+  "shootSound": "laserbig",
+  "firingMoveFract": 1,
+  "shootDuration": 3,
+
+  "consumes": {
+    "power": 2.5
+  },
+
+  "shootType": {
+      "type": "ContinuousLaserBulletType",
+      "damage": 5,
+      "length": 200,
+      "hitColor": "c90d00",
+      "width": 1,
+      "drawSize": 15
+  },
+
+  "requirements": [
+    "d-part/125",
+    "tin/35",
+    "platinum/45"
+  ],
+  
+  "category": "turret",
+  "research": "battlement",
+  "researchCost": [
+    "research-materia2/1"
+  ]
+}

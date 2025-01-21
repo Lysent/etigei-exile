@@ -1,0 +1,30 @@
+{
+  "localizedName": "Repairer Zwei",
+  "description": "Repairs blocks.",
+  "details": "Sourced from a prototype of the German Military designed shortly after the Third Etigeox War.",
+  "type": "MendProjector",
+  "color": "84f491",
+
+  "health": 1200,
+  "size": 2,
+  "hasPower": true,
+  "healPercent": 12,
+  "useTime": 400,
+  "reload": 250,
+  "range": 120,
+  "consumes": {
+    "power": 2.25
+  },
+  
+  "requirements": [
+    "d-part/14",
+    "platinum/16"
+  ],
+  "category": "effect",
+  "research": {
+    "parent": "eins"
+  },
+  "researchCost": [
+    "research-materia2/1"
+  ]
+}

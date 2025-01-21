@@ -1,0 +1,23 @@
+{
+  "localizedName": "Advanced Research Material",
+  "description": "Used to unlock technological advancements.",
+  "details": "More akin to research permits than blueprints or groundbreaking scientific material.",
+  "type": "material",
+  "color": "58a0ff",
+  "cost": 0.1,
+
+  "flammability": 0,
+  "explosiveness": 1,
+  "charge": 0,
+  "radioactivity": 0,
+
+  "research": {
+    "parent": "research-materia1"
+  },
+  "alwaysUnlocked": false,
+  "hiddenOnPlanets": [
+    "serpulo",
+    "erekir",
+    "Rubiginosus"
+  ]
+}

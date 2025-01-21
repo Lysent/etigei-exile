@@ -24,7 +24,7 @@
       "reload": 15,
       "shots": 4,
       "inaccuracy": 5,
-      "shootSound": "beam",
+      "shootSound": "blaster",
       "bullet": {
         "speed": 3.5,
         "lifetime": 40,

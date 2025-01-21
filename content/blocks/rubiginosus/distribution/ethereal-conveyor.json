@@ -8,7 +8,7 @@
   "buildVisibility": "campaignOnly",
   
   "speed": 0.03,
-  "displaySpeed": 0.03,
+  "displayedSpeed": 0,
   "junctionReplacement": "ethereal-junction",
 
   "requirements": [

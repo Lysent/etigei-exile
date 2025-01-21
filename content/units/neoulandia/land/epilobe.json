@@ -35,7 +35,7 @@
       "reload": 250,
       "shots": 1,
       "inaccuracy": 0,
-      "shootSound": "beam",
+      "shootSound": "artillery",
       "bullet": {
         "type": "ArtilleryBulletType",
         "speed": 2.5,

@@ -1,0 +1,24 @@
+{
+  "localizedName": "Platinum Conveyor",
+  "description": "A standard conveyor line tested to resist the violent winds of Neoulandia.",
+  "type": "conveyor",
+  
+  "health": 2,
+  "size": 1,
+  "speed": 0.05,
+  "displayedSpeed": 7,
+  "junctionReplacement": "etigeum-junction",
+  "bridgeReplacement": "etigeum-bridge",
+
+  "requirements": [
+    "t-part/1",
+    "platinum/1"
+  ],
+  "category": "distribution",
+  "research": {
+    "parent": "loading-docks"
+  },
+  "researchCost": [
+    "research-materia2/1"
+  ]
+}

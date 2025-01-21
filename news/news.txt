@@ -1,0 +1,62 @@
+[gray] 17/01/2025
+[white] - Revamped tutorial mission
+
+ - Etigeum conveyor rebalanced
+ - Passage speed nerfed
+
+[gray] 16/01/2025
+[white] - Mobile version fix
+
+[gray] 13/01/2025
+[white] - Added startup UI
+
+[gray] 19/12/2024
+[white] - Added "Ice Spikes" map
+ - Buffed Tour turret
+ - Buffed Composite Walls
+ - Fixed unit sounds
+ - Fixed turret sounds
+
+[gray] 14/12/2024
+[white] - Fixed Serorjoen Mountains balance
+ - Implemented French Translation
+
+[gray] 09/12/2024
+[white] - Added sector "Serorjoen Mountains"
+ - Added destructible environment blocks for Serorjoen Mountains
+ - Added Important Support Beams for Serorjoen Mountains
+
+[gray] 08/12/2024
+[white] - Buffed Harfang Cargo item limit and speed
+ - Buffed Boechera unit speed
+ - Nerfed research material reward amount
+ - Nerfed drill and refineries
+ - Fixed Passage's absurd transfer speed
+ - Rebalanced unit costs
+ - Rebalanced wall costs
+
+ - Rebalanced waves on the map Scouting Party
+ - Rebalanced block costs on maps outside of Landing Ground
+
+[gray] 05/12/2024
+[white] - Solar Windturbine now spins
+ - Buffed Fuel Heater output
+ - Nerfed Electric Heater power consumption
+ - Fuel Generator rebalance
+ - Fixed Microchip Factory sprite
+
+ - Moved colonial unloaders away from core to allow warehouses
+ - Fixed mining orders for Rockcress and Harfang
+ - Patched research material cheesing on Landing Ground
+(Only playing newer maps or resetting the map will update these three last changes)
+
+[gray] 03/12/2024
+[white] *Release Version*
+ - Neoulandia (4 sectors)
+ - Rubiginosus (12 sectors)
+
+ - Phase 1 Neoulandia Tech Tree Content
+ - Machine, Transports, and Microchip factories
+ - Liquids content
+ - T1 Units
+ - Some more

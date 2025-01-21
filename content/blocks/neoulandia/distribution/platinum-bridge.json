@@ -1,0 +1,23 @@
+{
+  "localizedName": "Platinum Tunnel",
+  "description": "Interconnect multiple lanes underground from afar.",
+  "type": "BufferedItemBridge",
+
+  "health": 5,
+  "size": 1,
+  "speed": 33,
+  "itemCapacity": 6,
+  "range": 5,
+
+  "requirements": [
+    "t-part/5",
+    "platinum/5"
+  ],
+  "category": "distribution",
+  "research": {
+    "parent": "platinum-junction"
+  },
+  "researchCost": [
+    "research-materia2/1"
+  ]
+}

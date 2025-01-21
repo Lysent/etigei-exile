@@ -7,5 +7,6 @@
   "hidden": true,
   "alwaysReplace": false,
   "variants": 2,
-  "buildVisibility": "editorOnly"
+  "buildVisibility": "editorOnly",
+  "category": "effect"
 }

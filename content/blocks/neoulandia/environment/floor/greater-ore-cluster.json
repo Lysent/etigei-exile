@@ -1,0 +1,5 @@
+{
+  "type": "OreBlock",
+  "itemDrop": "greater-ore",
+  "variants": 3
+}

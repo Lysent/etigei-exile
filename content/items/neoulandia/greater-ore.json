@@ -1,0 +1,23 @@
+{
+  "localizedName": "Greater Ore",
+  "description": "Unrefined ore dug out of the ground.",
+  "type": "resource",
+  "color": "b6c7b5",
+  "hidden": "false",
+
+  "hardness": 3,
+  "flammability": 0,
+  "explosiveness": 0,
+  "charge": 0,
+  "radioactivity": 0,
+  "buildable": "false",
+
+  "research": {
+    "parent": "silver"
+  },
+  "hiddenOnPlanets": [
+    "serpulo",
+    "erekir",
+    "Rubiginosus"
+  ]
+}
