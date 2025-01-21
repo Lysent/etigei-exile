@@ -8,14 +8,14 @@
 
   "targetAir": true,
   "targetGround": true,
-  "reload": 10,
+  "reload": 2,
   "recoil": 2,
   "shake": 2,
   "range": 200,
   "inaccuracy": 1,
   "shootSound": "laserbig",
   "firingMoveFract": 1,
-  "shootDuration": 500,
+  "shootDuration": 3,
 
   "consumes": {
     "power": 2.5
@@ -23,6 +23,7 @@
 
   "shootType": {
       "type": "ContinuousLaserBulletType",
+      "damage": 5,
       "length": 200,
       "hitColor": "c90d00",
       "width": 1,
