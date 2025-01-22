@@ -1,0 +1,33 @@
+{
+  "localizedName": "Praetor",
+  "description": "Elite aircraft outfitted for colonial governors.",
+  "type": "flying",
+
+  "health": 150,
+  "flying": true,
+  "isEnemy": false,
+  "coreUnitDock": true,
+  "hitSize": 2,
+  
+  "buildSpeed": 0.5,
+  "speed": 4.5,
+  "drag": 0.1,
+
+  "weapons": [
+    {
+      "name": "milice",
+      "top": false,
+      "x": 0,
+      "y": 0.6,
+      "reload": 15,
+      "shots": 2,
+      "inaccuracy": 25,
+      "shootSound": "bang",
+      "bullet": {
+        "speed": 2.5,
+        "lifetime": 50,
+        "damage": 25
+      }
+    }
+  ]
+}

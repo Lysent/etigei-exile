@@ -16,7 +16,5 @@
   "speed": 5.25,
   "drag": 0.5,
   "engineSize": 2,
-  "engineOffset": 5,
-
-  "alwaysUnlocked": true
+  "engineOffset": 5
 }

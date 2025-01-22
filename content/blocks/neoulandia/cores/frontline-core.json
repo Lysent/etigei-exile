@@ -1,0 +1,27 @@
+{
+  "name": "Frontline Core",
+  "type": "CoreBlock",
+  
+  "size": 3,
+  "health": 3500,
+  "itemCapacity": 1000,
+  "isFirstTier": false,
+  "alwaysUnlocked": false,
+  "unitType": "praetor",
+  "unitCapModifier": "0",
+  "incinerateNonBuildable": "true",
+
+  "requirements": [
+    "m-part/250",
+    "t-part/200",
+    "smart-compound/50"
+  ],
+
+  "category": "effect",
+  "research": {
+    "parent": "colony-core"
+  },
+  "researchCost": [
+    "research-materia2/1"
+  ]
+}

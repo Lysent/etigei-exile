@@ -27,7 +27,7 @@
       "reload": 15,
       "shots": 2,
       "inaccuracy": 25,
-      "shootSound": "beam",
+      "shootSound": "bang",
       "bullet": {
         "speed": 2.5,
         "lifetime": 50,
