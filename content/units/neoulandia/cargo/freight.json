@@ -1,0 +1,22 @@
+{
+  "localizedName": "Freight",
+  "description": "Medium-size delivery aircraft.",
+  "type": "tether",
+  "hidden": "true",
+
+  "health": 100,
+  "flying": true,
+  "isEnemy": false,
+  "hitSize": 8,
+  
+  "defaultController": "CargoAI",
+  "logicControllable": false,
+  "playerControllable": false,
+  "itemCapacity": 48,
+  "speed": 5.25,
+  "drag": 0.5,
+  "engineSize": 2,
+  "engineOffset": 5,
+
+  "alwaysUnlocked": true
+}

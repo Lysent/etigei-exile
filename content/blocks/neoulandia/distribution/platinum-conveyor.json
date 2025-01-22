@@ -7,8 +7,8 @@
   "size": 1,
   "speed": 0.05,
   "displayedSpeed": 7,
-  "junctionReplacement": "etigeum-junction",
-  "bridgeReplacement": "etigeum-bridge",
+  "junctionReplacement": "platinum-junction",
+  "bridgeReplacement": "platinum-bridge",
 
   "requirements": [
     "t-part/1",

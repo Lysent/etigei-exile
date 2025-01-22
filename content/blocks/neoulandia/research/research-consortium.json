@@ -1,0 +1,40 @@
+{
+  "localizedName": "Research Consortium",
+  "description": "Reuses parts of outdated research permits to construct slightly new and improved ones.",
+  "details": "Furniture is still really expensive.",
+  "type": "GenericCrafter",
+
+  "health": 150,
+  "size": 2,
+  "hasPower": true,
+  "hasLiquids": false,
+  "hasItems": true,
+  "itemCapacity": 9,
+
+  "craftTime": 2000,
+  "consumes": {
+    "power": 8,
+    "items": {
+      "items": [
+        "research-materia1/3"
+      ]
+    }
+  },
+  "outputItems": [
+    "research-materia2/1"
+  ],
+
+  "requirements": [
+    "timber/1000",
+    "smart-compound/50",
+    "tin/125",
+    "silver/100",
+    "platinum/100"
+  ],
+  
+  "category": "effect",
+  "research": "research-society",
+  "researchCost": [
+    "research-materia2/1"
+  ]
+}

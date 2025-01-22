@@ -1,0 +1,24 @@
+{
+  "localizedName": "Loading Dockyard",
+  "description": "Uses cargo aircrafts to transport materials.",
+  "type": "UnitCargoLoader",
+  "health": 55,
+  "size": 2,
+
+  "hasPower": true,
+  "hasLiquids": false,
+  "hasItems": true,
+  "itemCapacity": 64,
+  "unitType": "freight",
+
+  "requirements": [
+    "t-part/5",
+    "nickel/8"
+  ],
+
+  "category": "distribution",
+  "research": "loading-docks",
+  "researchCost": [
+    "research-materia2/1"
+  ]
+}
