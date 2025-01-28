@@ -13,7 +13,7 @@
   "buildable": "false",
 
   "research": {
-    "parent": "timber"
+    "parent": "edt-timber"
   },
   "hiddenOnPlanets": [
     "serpulo",

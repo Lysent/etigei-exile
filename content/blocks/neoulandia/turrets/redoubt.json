@@ -2,7 +2,7 @@
   "localizedName": "Redoubt",
   "description": "Dissuation.",
   "details": "Second tier turret. Use of significant power as ammunition.",
-  "type": "LaserTurret",
+  "type": "ContinuousTurret",
   "health": 150,
   "size": 2,
 
@@ -16,7 +16,7 @@
   "shootSound": "laserbig",
   "firingMoveFract": 1,
   "shootDuration": 3,
-  "heatRequirement": 3,
+  "heatRequirement": 10,
 
   "consumes": {
     "power": 2.5

@@ -19,7 +19,7 @@
 
   "category": "effect",
   "research": {
-    "parent": "colony-core"
+    "parent": "colony-unloader"
   },
   "researchCost": [
     "research-materia2/1"

@@ -12,7 +12,7 @@
   "radioactivity": 0,
 
   "research": {
-    "parent": "timber"
+    "parent": "edt-timber"
   },
   "alwaysUnlocked": true,
   "hiddenOnPlanets": [

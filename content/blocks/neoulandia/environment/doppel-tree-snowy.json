@@ -8,6 +8,6 @@
   
   "category": "effect",
   "requirements": [
-    "timber/32"
+    "edt-timber/32"
   ]
 }

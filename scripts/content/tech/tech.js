@@ -3,7 +3,7 @@
 const chainNode = (parent, research) => {
     const node = new TechTree.TechNode(null, research.unlock, research.requirements || ItemStack.empty);
 
-    if(research.objectives){
+    if (research.objectives) {
         for (let i = 0; i < research.objectives.length; i++) {
             const objective = research.objectives[i];
             node.objectives.add(objective);
@@ -31,7 +31,7 @@ const chainNode = (parent, research) => {
 };
 
 const addTechNode = (research) => {
-    const parent = TechTree.all.find(t => t.content == research.parent && (t.planet !== null ? t.planet == node.planet : true));
+    const parent = TechTree.all.find(t => t !== undefined ? t.content == research.parent && (t.planet !== null ? t.planet == node.planet : true) : false);
 
     log("etigeox", "(potentially) found parent");
 
@@ -64,14 +64,20 @@ Events.on(ContentInitEvent, () => {
     // Nothing :/
 
     // Neoulandia
-    const neoulandia_coal = addTechNode({
-        parent: Vars.content.item("etigeox-raw-ore"),
-        requirements: ItemStack.with(
-            Items.coal, 1
-        ),
-        unlock: Items.coal,
+    const neoulandia_timber = addTechNode({
+        parent: Vars.content.block("etigeox-colony-core"),
+        unlock: Vars.content.item("etigeox-tin"),
         planet: "etigeox-Neoulandia"
     });
+
+    // const neoulandia_coal = addTechNode({
+    //     parent: Vars.content.item("etigeox-raw-ore"),
+    //     requirements: ItemStack.with(
+    //         Items.coal, 1
+    //     ),
+    //     unlock: Items.coal,
+    //     planet: "etigeox-Neoulandia"
+    // });
     // const neoulandia_sand = addTechNode({
     //     parent: Vars.content.item("etigeox-timber"),
     //     requirements: new Objectives.Produce(Items.sand),
@@ -84,29 +90,29 @@ Events.on(ContentInitEvent, () => {
     //     planet: "etigeox-Neoulandia"
     // });
 
-    const neoulandia_water = addTechNode({
-        parent: Vars.content.item("etigeox-timber"),
-        objectives: [new Objectives.Produce(Liquids.water)],
-        unlock: Liquids.water,
-        planet: "etigeox-Neoulandia"
-    });
+    // const neoulandia_water = addTechNode({
+    //     parent: Vars.content.item("edt-timber"),
+    //     objectives: [new Objectives.Produce(Liquids.water)],
+    //     unlock: Liquids.water,
+    //     planet: "etigeox-Neoulandia"
+    // });
     // chainNode(neoulandia_water, {
     //     unlock: Vars.content.item("etigeox-canned-water"),
     //     planet: "etigeox-Neoulandia"
     // });
-    const neoulandia_oil = chainNode(neoulandia_water, {
-        unlock: Liquids.oil,
-        objectives: [new Objectives.Produce(Liquids.oil)],
-        planet: "etigeox-Neoulandia"
-    });
+    // const neoulandia_oil = chainNode(neoulandia_water, {
+    //     unlock: Liquids.oil,
+    //     objectives: [new Objectives.Produce(Liquids.oil)],
+    //     planet: "etigeox-Neoulandia"
+    // });
     // chainNode(neoulandia_oil, {
     //     unlock: Liquids.slag,
     //     requirements: new Objectives.Produce(Liquids.slag),
     //     planet: "etigeox-Neoulandia"
     // });
-    chainNode(neoulandia_oil, {
-        unlock: Vars.content.liquid("etigeox-natural-gas"),
-        objectives: [new Objectives.Produce(Vars.content.liquid("etigeox-natural-gas"))],
-        planet: "etigeox-Neoulandia"
-    });
+    // chainNode(neoulandia_oil, {
+    //     unlock: Vars.content.liquid("etigeox-natural-gas"),
+    //     objectives: [new Objectives.Produce(Vars.content.liquid("etigeox-natural-gas"))],
+    //     planet: "etigeox-Neoulandia"
+    // });
 });

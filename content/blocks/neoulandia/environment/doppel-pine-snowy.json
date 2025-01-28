@@ -8,6 +8,6 @@
 
   "category": "effect",
   "requirements": [
-    "timber/24"
+    "edt-timber/24"
   ]
 }
