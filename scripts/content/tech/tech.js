@@ -31,7 +31,7 @@ const chainNode = (parent, research) => {
 };
 
 const addTechNode = (research) => {
-    const parent = TechTree.all.find(t => t !== undefined ? t.content == research.parent && (t.planet !== null ? t.planet == node.planet : true) : false);
+    const parent = TechTree.all.find(t => t !== undefined && t.content == research.parent && (t.planet !== null ? t.planet == research.planet : true));
 
     log("etigeox", "(potentially) found parent");
 
