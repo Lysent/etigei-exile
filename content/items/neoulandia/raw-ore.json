@@ -13,7 +13,7 @@
   "buildable": "false",
 
   "research": {
-    "parent": "edt-timber"
+    "parent": "colony-core"
   },
   "hiddenOnPlanets": [
     "serpulo",
