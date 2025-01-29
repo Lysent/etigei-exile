@@ -65,14 +65,14 @@ Events.on(ContentInitEvent, () => {
 
     // Neoulandia
     const neoulandia_timber = addTechNode({
-        parent: Vars.content.item("etigeox-raw-ore"), //This crashes if it's a block (colony-core)
+        parent: Vars.content.block("etigeox-colony-core"), //This crashes if it's a block (colony-core)
         unlock: Vars.content.item("edt-timber"),
         planet: "etigeox-Neoulandia"
     });
 
     const neoulandia_coal = addTechNode({
         parent: Vars.content.item("etigeox-raw-ore"),
-        requirements: new Objectives.Produce(Items.coal), //This crashess
+        objectives: [new Objectives.Produce(Items.coal)], //This crashess
         unlock: Items.coal,
         planet: "etigeox-Neoulandia"
     });
@@ -83,7 +83,7 @@ Events.on(ContentInitEvent, () => {
     //     planet: "etigeox-Neoulandia"
     // });
     const neoulandia_silicon = chainNode(neoulandia_coal, {
-        requirements: new Objectives.Produce(Items.silicon),
+        objectives: [new Objectives.Produce(Items.silicon)],
         unlock: Items.silicon,
         planet: "etigeox-Neoulandia"
     });
