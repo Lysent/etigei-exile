@@ -8,6 +8,7 @@
   "flying": true,
   "isEnemy": false,
   "hitSize": 8,
+  "useUnitCap": false,
   
   "defaultController": "CargoAI",
   "logicControllable": false,
