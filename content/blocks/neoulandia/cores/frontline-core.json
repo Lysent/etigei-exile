@@ -4,11 +4,11 @@
   
   "size": 3,
   "health": 3500,
-  "itemCapacity": 1000,
+  "itemCapacity": 500,
   "isFirstTier": false,
   "alwaysUnlocked": false,
   "unitType": "praetor",
-  "unitCapModifier": "0",
+  "unitCapModifier": "10",
   "incinerateNonBuildable": "true",
 
   "requirements": [
@@ -19,9 +19,9 @@
 
   "category": "effect",
   "research": {
-    "parent": "colony-unloader"
+    "parent": "cistern"
   },
   "researchCost": [
-    "research-materia2/1"
+    "research-materia1/1"
   ]
 }

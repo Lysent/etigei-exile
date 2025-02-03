@@ -12,9 +12,6 @@
   "charge": 0,
   "radioactivity": 0,
 
-  "research": {
-    "parent": "t-part"
-  },
   "hiddenOnPlanets": [
     "serpulo",
     "erekir",

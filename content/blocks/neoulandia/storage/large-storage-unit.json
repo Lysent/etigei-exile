@@ -3,7 +3,7 @@
   "type": "StorageBlock",
   "size": 3,
 
-  "itemCapacity": 2000,
+  "itemCapacity": 1125,
 
   "requirements": [
     "t-part/12",
@@ -12,7 +12,7 @@
   ],
 
   "category": "effect",
-  "research": "mini-storage-unit",
+  "research": "storage-unit",
   "researchCost": [
     "research-materia1/1"
   ]

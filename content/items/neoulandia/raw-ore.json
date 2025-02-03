@@ -12,9 +12,6 @@
   "radioactivity": 0,
   "buildable": "false",
 
-  "research": {
-    "parent": "colony-core"
-  },
   "hiddenOnPlanets": [
     "serpulo",
     "erekir",
