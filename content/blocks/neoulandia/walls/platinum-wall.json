@@ -4,7 +4,7 @@
   "type": "wall",
   "health": 1000,
   "size": 1,
-  "chanceDeflect": 8,
+  "chanceDeflect": 6,
   "requirements": [
     "platinum/8"
   ],
