@@ -1,0 +1,54 @@
+{
+  "localizedName": "Cercis",
+  "description": "Support-type aircraft, to be paired up with governor units.",
+  "type": "flying",
+  "hidden": "false",
+
+  "health": 100,
+  "flying": true,
+  "isEnemy": false,
+  "hitSize": 6,
+  
+  "logicControllable": true,
+  "playerControllable": true,
+  "commands": [
+    "move",
+    "mine",
+    "repair",
+    "support"
+  ],
+  "mineItems": [
+    "tin",
+    "alumin",
+    "silicon"
+  ],
+  "itemCapacity": 48,
+  "speed": 2.5,
+  "drag": 0.5,
+  "engineSize": 2,
+  "engineOffset": 5,
+
+  "mineTier": 10,
+  "mineSpeed": 0.35,
+
+  "weapons": [
+    {
+      "name": "milice",
+      "top": false,
+      "x": 0,
+      "y": 0.6,
+      "reload": 15,
+      "shots": 2,
+      "inaccuracy": 25,
+      "shootSound": "bang",
+      "bullet": {
+        "speed": 2.5,
+        "lifetime": 50,
+        "damage": 25
+      }
+    }
+  ],
+
+  "research": "harfang-cargo",
+  "researchCostMultiplier": 10
+}

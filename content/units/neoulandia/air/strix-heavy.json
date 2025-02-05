@@ -1,0 +1,56 @@
+{
+  "localizedName": "Heavy Strix",
+  "description": "Heavier version of the Strix aircraft meant for operations behind enemy lines. Designed to output as much retaliatory damage if shot down.",
+  "type": "flying",
+
+  "health": 600,
+  "armor": 1,
+  "flying": true,
+  "isEnemy": false,
+  "hitSize": 16,
+
+  "logicControllable": true,
+  "playerControllable": true,
+  "itemCapacity": 64,
+  "speed": 2,
+  "drag": 0.5,
+  "engineSize": 2,
+  "engineOffset": 5,
+  "targetDistance": 35,
+
+  "weapons": [
+    {
+      "name": "strix-gun",
+      "top": false,
+      "x": 0,
+      "y": 0.6,
+      "reload": 10,
+      "shots": 3,
+      "inaccuracy": 10,
+      "shootSound": "bang",
+      "bullet": {
+        "speed": 2.5,
+        "lifetime": 40,
+        "damage": 45
+      }
+    },
+    {
+      "name": "strix-gun",
+      "top": false,
+      "x": 0,
+      "y": 0.6,
+      "reload": 10,
+      "shots": 3,
+      "inaccuracy": 10,
+      "shootSound": "bang",
+      "bullet": {
+        "speed": 2.5,
+        "lifetime": 40,
+        "damage": 45
+      }
+    }
+  ],
+
+  "research": "strix",
+  "researchCostMultiplier": 10
+}

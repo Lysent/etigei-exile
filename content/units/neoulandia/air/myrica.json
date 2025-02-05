@@ -1,6 +1,6 @@
 {
-  "localizedName": "Harfang (Cargo)",
-  "description": "Small and efficient delivery aircraft.",
+  "localizedName": "Myrica",
+  "description": "Aircraft specialized into cargo and mining operations.",
   "type": "flying",
   "hidden": "false",
 
@@ -12,22 +12,25 @@
   "logicControllable": true,
   "playerControllable": true,
   "commands": [
-    "move"
+    "move",
+    "mine"
   ],
   "mineItems": [
     "tin",
     "alumin",
-    "silicon"
+    "silicon",
+    "nickel",
+    "platinum"
   ],
-  "itemCapacity": 16,
+  "itemCapacity": 48,
   "speed": 2.5,
   "drag": 0.5,
   "engineSize": 2,
   "engineOffset": 5,
 
-  "mineTier": 10,
-  "mineSpeed": 0.5,
+  "mineTier": 20,
+  "mineSpeed": 0.75,
 
-  "research": "civil-manufactory",
+  "research": "harfang-cargo",
   "researchCostMultiplier": 10
 }
