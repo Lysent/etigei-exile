@@ -16,7 +16,6 @@ const NewsDialog = () => {
 		urlWiki = "",
 		urlGithub = "https://github.com/Lysent/etigei-exile";
 
-
 	const load = () => {
 		dialog = new BaseDialog(Core.bundle.format("etigeox.news.title", mod.meta.version));
 
@@ -27,6 +26,7 @@ const NewsDialog = () => {
 		onResize(() => {
 			dialog.cont.clear();
 			loadBody(news);
+			loadStar();
 			loadButtons();
 		});
 
@@ -40,6 +40,14 @@ const NewsDialog = () => {
 
 		dialog.cont.pane(news).width(Vars.mobile ? 480 : 600)
 			.maxWidth(Vars.mobile ? 480 : 600).pad(4);
+	};
+
+	const loadStar = () => {
+		dialog.cont.row();
+		dialog.cont["table(arc.func.Cons)"](t => {
+			t.defaults().size(152 * 4, 40).pad(3);
+			t.button("Please star the mod on GitHub if you've appreciated it", Icon.star, linkButton(urlGithub));
+		}).center().fillX();
 	};
 
 	const loadButtons = () => {

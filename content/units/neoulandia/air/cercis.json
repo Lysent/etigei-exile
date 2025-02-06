@@ -15,7 +15,8 @@
     "move",
     "mine",
     "repair",
-    "support"
+    "rebuild",
+    "assist"
   ],
   "mineItems": [
     "tin",
