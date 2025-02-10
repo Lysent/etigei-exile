@@ -17,14 +17,13 @@
   },
   
   "requirements": [
-    "d-part/14",
-    "platinum/16"
+    "sprite/14"
   ],
   "category": "effect",
   "research": {
-    "parent": "eins"
+   "parent": "sprite"
   },
   "researchCost": [
-    "research-materia2/1"
+   "sprite/1"
   ]
 }

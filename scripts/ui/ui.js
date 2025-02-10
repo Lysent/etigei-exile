@@ -45,8 +45,8 @@ const NewsDialog = () => {
 	const loadStar = () => {
 		dialog.cont.row();
 		dialog.cont["table(arc.func.Cons)"](t => {
-			t.defaults().size(152 * 4, 40).pad(3);
-			t.button("Please star the mod on GitHub if you've appreciated it", Icon.star, linkButton(urlGithub));
+			t.defaults().size(152 * 4, 42).pad(3);
+			t.button("Please star the mod on GitHub if you've appreciated", Icon.star, linkButton(urlGithub));
 		}).center().fillX();
 	};
 

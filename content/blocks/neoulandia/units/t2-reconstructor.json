@@ -1,0 +1,21 @@
+{
+  "localizedName": "Air Manufacture",
+  "description": "Produces a variety of airborne units.",
+  "type": "Reconstructor",
+  
+  "health": 100,
+  "size": 2,
+
+  "consumes": {
+    "power": 8
+  },
+
+  "requirements": [
+    "sprite/75"
+  ],
+  "category": "units",
+  "research": "sprite",
+  "researchCost": [
+    "sprite/1"
+  ]
+}
