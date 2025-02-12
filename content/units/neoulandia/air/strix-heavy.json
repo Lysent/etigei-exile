@@ -7,22 +7,22 @@
   "armor": 1,
   "flying": true,
   "isEnemy": false,
-  "hitSize": 16,
+  "hitSize": 13,
 
   "logicControllable": true,
   "playerControllable": true,
   "itemCapacity": 64,
   "speed": 2,
   "drag": 0.5,
-  "engineSize": 2,
-  "engineOffset": 5,
+  "engineSize": 2.5,
+  "engineOffset": 8,
   "targetDistance": 35,
 
   "weapons": [
     {
       "name": "strix-gun",
       "top": false,
-      "x": 0,
+      "x": -3,
       "y": 0.6,
       "reload": 10,
       "shots": 3,
@@ -37,7 +37,7 @@
     {
       "name": "strix-gun",
       "top": false,
-      "x": 0,
+      "x": 3,
       "y": 0.6,
       "reload": 10,
       "shots": 3,

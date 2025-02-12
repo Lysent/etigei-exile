@@ -1,3 +1,24 @@
+[gray] 11/02/2025
+[white] - Timber (EDT) is now a required dependency
+Existing timber in cores or containers will be deleted; timber can still be acquired through breaking trees.
+
+Added 20 blocks, 3 items, 1 unit, and 1 map:
+- Added greater ore, elite research materials, nickel, and platinum
+- Adds greater extractor and mineral purifier
+- Adds slag melter and smeltery
+- Adds loading dockyard (T2), platinum conveyor, platinum bridge, platinum junction and router.s
+- Adds research consortium, mender, nickel battery, platinum walls, incinerator
+- Adds turrets: battlement, loophole, machiolation, redoubt
+- Adds map:
+
+- Docks Loading Station now ignores the unit limit.
+- Unit limit nerfed
+- Frontline core now increases unit limit instead of Colony core.
+- Harfangs can no longer be given the command to mine
+- Fixed Harfang shooting sound
+- Neoulandia tech tree changes
+- Updated mod description
+
 [gray] 17/01/2025
 [white] - Revamped tutorial mission
 

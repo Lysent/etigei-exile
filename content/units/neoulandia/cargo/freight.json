@@ -2,7 +2,7 @@
   "localizedName": "Freight",
   "description": "Medium-size delivery aircraft.",
   "type": "tether",
-  "hidden": "true",
+  "hidden": "false",
 
   "health": 100,
   "flying": true,
@@ -16,6 +16,6 @@
   "itemCapacity": 48,
   "speed": 5.25,
   "drag": 0.5,
-  "engineSize": 2,
-  "engineOffset": 5
+  "engineSize": 2.5,
+  "engineOffset": 7.25
 }
