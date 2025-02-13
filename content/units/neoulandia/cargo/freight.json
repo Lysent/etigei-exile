@@ -2,7 +2,7 @@
   "localizedName": "Freight",
   "description": "Medium-size delivery aircraft.",
   "type": "tether",
-  "hidden": "false",
+  "hidden": "true",
 
   "health": 100,
   "flying": true,
