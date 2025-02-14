@@ -5,6 +5,8 @@ const linkButton = url => () => {
 	}
 };
 
+// const UpdateChecker = require("./autoUpdater")
+
 const NewsDialog = () => {
 	let dialog;
 
@@ -22,6 +24,8 @@ const NewsDialog = () => {
 		dialog.addCloseListener();
 
 		const news = getNews();
+		// const checker = UpdateChecker();
+		// checker.init();
 
 		onResize(() => {
 			dialog.cont.clear();
