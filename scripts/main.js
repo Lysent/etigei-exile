@@ -10,4 +10,4 @@ require("content/tech/contentLoader");
 require("content/tech/tech");
 
 require("ui/ui");
-require("autoUpdater");
+// require("ui/autoUpdater");

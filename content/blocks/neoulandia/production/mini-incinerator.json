@@ -1,0 +1,24 @@
+{
+  "localizedName": "Incinerator",
+  "description": "Burns any unwanted items.",
+  "type": "Incinerator",
+  "health": 80,
+  "size": 2,
+
+  "hasPower": true,
+
+  "consumes": {
+    "power": 0.25
+  },
+
+  "requirements": [
+    "tin/50",
+    "alumin/30",
+    "silver/15"
+  ],
+  "category": "crafting",
+  "research": "mini-storage-unit",
+  "researchCost": [
+    "research-materia1/1"
+  ]
+}

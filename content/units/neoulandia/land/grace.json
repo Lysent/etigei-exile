@@ -1,0 +1,54 @@
+{
+  "localizedName": "Grace",
+  "description": "Heavy class mobile gun platform.",
+  "type": "tank",
+
+  "health": 750,
+  "armor": 7.5,
+  "flying": false,
+  "isEnemy": false,
+  "hitSize": 24,
+
+  "logicControllable": true,
+  "playerControllable": true,
+  "speed": 0.7,
+  "drag": 2,
+  "targetDistance": 100,
+  "rotateSpeed": 1,
+
+  "treadPullOffset": 4,
+  "treadRects": [
+    {
+      "x": 6,
+      "y": 6,
+      "width": 15,
+      "height": 15
+    }
+  ],
+
+  "weapons": [
+    {
+      "name": "fireweed-gun",
+      "top": false,
+      "x": 0,
+      "y": 0.6,
+      "reload": 225,
+      "shots": 2,
+      "inaccuracy": 0,
+      "shootSound": "artillery",
+      "bullet": {
+        "type": "ArtilleryBulletType",
+        "speed": 2.5,
+        "lifetime": 70,
+        "damage": 50,
+        "width": 2,
+        "height": 4,
+        "splashDamage": 35,
+        "splashDamageRadius": 10
+      }
+    }
+  ],
+
+  "research": "sprite",
+  "researchCostMultiplier": 10
+}

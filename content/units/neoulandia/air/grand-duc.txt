@@ -1,0 +1,41 @@
+{
+  "localizedName": "Harfang (Militia)",
+  "description": "Cargo aircraft refitted for military use.",
+  "type": "flying",
+
+  "health": 190,
+  "armor": 1,
+  "flying": true,
+  "isEnemy": false,
+  "hitSize": 8,
+
+  "logicControllable": true,
+  "playerControllable": true,
+  "itemCapacity": 2,
+  "speed": 2.5,
+  "drag": 0.5,
+  "engineSize": 2,
+  "engineOffset": 5,
+  "targetDistance": 35,
+
+  "weapons": [
+    {
+      "name": "milice",
+      "top": false,
+      "x": 0,
+      "y": 0.6,
+      "reload": 15,
+      "shots": 2,
+      "inaccuracy": 25,
+      "shootSound": "bang",
+      "bullet": {
+        "speed": 2.5,
+        "lifetime": 50,
+        "damage": 25
+      }
+    }
+  ],
+
+  "research": "air-manufactory",
+  "researchCostMultiplier": 10
+}

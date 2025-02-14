@@ -11,9 +11,6 @@
   "charge": 0,
   "radioactivity": 0,
 
-  "research": {
-    "parent": "research-materia1"
-  },
   "alwaysUnlocked": false,
   "hiddenOnPlanets": [
     "serpulo",

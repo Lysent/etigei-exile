@@ -12,9 +12,6 @@
   "charge": 0,
   "radioactivity": 0,
 
-  "research": {
-    "parent": "alumin"
-  },
   "hiddenOnPlanets": [
     "serpulo",
     "erekir",

@@ -6,15 +6,12 @@
   "cost": 0.5,
   "hidden": "false",
 
-  "hardness": 10,
+  "hardness": 20,
   "flammability": 0,
   "explosiveness": 0,
   "charge": 0,
   "radioactivity": 0,
 
-  "research": {
-    "parent": "greater-ore"
-  },
   "hiddenOnPlanets": [
     "serpulo",
     "erekir",

@@ -1,0 +1,33 @@
+{
+  "localizedName": "Air Manufacture",
+  "description": "Produces a variety of airborne units.",
+  "type": "UnitFactory",
+  
+  "health": 100,
+  "size": 2,
+
+  "plans": [
+    {
+      "unit": "harfang",
+      "time": 200,
+      "requirements": [
+        "t-part/18",
+        "silver/12"
+      ]
+    }
+  ],
+  "configurable": true,
+
+  "consumes": {
+    "power": 8
+  },
+
+  "requirements": [
+    "sprite/75"
+  ],
+  "category": "units",
+  "research": "sprite",
+  "researchCost": [
+    "sprite/1"
+  ]
+}

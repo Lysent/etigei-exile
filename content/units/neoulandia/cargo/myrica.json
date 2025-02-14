@@ -1,0 +1,36 @@
+{
+  "localizedName": "Myrica",
+  "description": "Aircraft specialized into cargo and mining operations.",
+  "type": "flying",
+  "hidden": "false",
+
+  "health": 100,
+  "flying": true,
+  "isEnemy": false,
+  "hitSize": 6,
+  
+  "logicControllable": true,
+  "playerControllable": true,
+  "commands": [
+    "move",
+    "mine"
+  ],
+  "mineItems": [
+    "tin",
+    "alumin",
+    "silicon",
+    "nickel",
+    "platinum"
+  ],
+  "itemCapacity": 48,
+  "speed": 2.5,
+  "drag": 0.5,
+  "engineSize": 2,
+  "engineOffset": 5,
+
+  "mineTier": 20,
+  "mineSpeed": 0.75,
+
+  "research": "sprite",
+  "researchCostMultiplier": 10
+}

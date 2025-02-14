@@ -1,0 +1,24 @@
+{
+  "localizedName": "Large APS Reactive Wall",
+  "description": "A solid wall that intercepts some bullets.",
+  "type": "ShieldWall",
+  "health": 4400,
+  "size": 2,
+
+  "conductivePower": true,
+  "absorbLasers": true,
+  "consumes": {
+    "power": 3
+  },
+
+  "requirements": [
+    "d-part/12",
+    "platinum/24"
+  ],
+
+  "category": "defense",
+  "research": "laser-wall",
+  "researchCost": [
+    "research-materia2/1"
+  ]
+}

@@ -8,6 +8,7 @@
   "flying": true,
   "isEnemy": false,
   "hitSize": 8,
+  "useUnitCap": false,
   
   "defaultController": "CargoAI",
   "logicControllable": false,
@@ -15,6 +16,6 @@
   "itemCapacity": 48,
   "speed": 5.25,
   "drag": 0.5,
-  "engineSize": 2,
-  "engineOffset": 5
+  "engineSize": 2.5,
+  "engineOffset": 7.25
 }

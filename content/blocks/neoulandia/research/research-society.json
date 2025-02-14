@@ -20,7 +20,7 @@
   ],
 
   "requirements": [
-    "timber/1000",
+    "edt-timber/1000",
     "smart-compound/4",
     "tin/125",
     "silver/100"

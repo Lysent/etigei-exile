@@ -1,0 +1,17 @@
+{
+  "localizedName": "Large Platinum Wall",
+  "description": "A solid wall that reflects some bullets.",
+  "type": "wall",
+  "health": 4000,
+  "size": 2,
+  "chanceDeflect": 6,
+  "requirements": [
+    "platinum/24"
+  ],
+
+  "category": "defense",
+  "research": "platinum-wall",
+  "researchCost": [
+    "research-materia2/1"
+  ]
+}

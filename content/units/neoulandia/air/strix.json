@@ -1,0 +1,59 @@
+{
+  "localizedName": "Strix",
+  "description": "Regular airforce aircraft. Outfitted with missiles.",
+  "type": "flying",
+
+  "health": 450,
+  "armor": 2,
+  "flying": true,
+  "isEnemy": false,
+  "hitSize": 16,
+
+  "logicControllable": true,
+  "playerControllable": true,
+  "itemCapacity": 32,
+  "speed": 2.25,
+  "drag": 0.5,
+  "engineSize": 2,
+  "engineOffset": 5,
+  "targetDistance": 35,
+
+  "weapons": [
+    {
+      "name": "strix-gun",
+      "top": false,
+      "x": 0,
+      "y": 0.6,
+      "reload": 10,
+      "shots": 4,
+      "inaccuracy": 25,
+      "shootSound": "bang",
+      "bullet": {
+        "speed": 3,
+        "lifetime": 40,
+        "damage": 35
+      }
+    },
+    {
+      "name": "strix-missile",
+      "top": false,
+      "x": 0,
+      "y": 0.6,
+      "reload": 75,
+      "shots": 1,
+      "inaccuracy": 3,
+      "shootSound": "missile",
+      "bullet": {
+        "speed": 4,
+        "lifetime": 40,
+        "damage": 75,
+        "splashDamage": 35,
+        "splashDamageRadius": 10,
+        "homingRange": 25
+      }
+    }
+  ],
+
+  "research": "sprite",
+  "researchCostMultiplier": 10
+}

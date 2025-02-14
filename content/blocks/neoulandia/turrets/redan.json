@@ -30,14 +30,12 @@
   },
 
   "requirements": [
-    "d-part/125",
-    "tin/35",
-    "platinum/45"
+    "sprite/125"
   ],
   
   "category": "turret",
-  "research": "redoubt",
+  "research": "sprite",
   "researchCost": [
-    "research-materia1/1"
+    "sprite/1"
   ]
 }
