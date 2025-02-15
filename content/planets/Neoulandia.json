@@ -19,7 +19,7 @@
   "sectorSize": 3,
   "clearSectorOnLose": true,
   "allowSectorInvasion": true,
-  "allowLaunchToNumbered": true,
+  "allowLaunchToNumbered": false,
   "radius": 1,
 
   "hiddenItems": [
