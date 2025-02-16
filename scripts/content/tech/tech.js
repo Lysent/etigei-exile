@@ -66,7 +66,7 @@ Events.on(ContentInitEvent, () => {
     // Neoulandia
     const neoulandia_timber = addTechNode({
         parent: Vars.content.block("etigeox-colony-core"),
-        objectives: [new Objectives.Produce(Vars.content.item("edt-timber"))],
+        objectives: [new Objectives.Produce(Vars.content.item("etigeox-tin"))],
         unlock: Vars.content.item("edt-timber"),
         planet: "etigeox-Neoulandia"
     });
