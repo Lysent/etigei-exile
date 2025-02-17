@@ -40,7 +40,15 @@
     "silver/100"
   ],
   "category": "crafting",
-  "research": "refinery",
+  "research": {
+    "parent": "refinery",
+    "objectives": [
+      {
+        "type": "SectorComplete",
+        "preset": "emiss3-2"
+      }
+    ]
+  },
   "researchCost": [
     "research-materia1/1"
   ]

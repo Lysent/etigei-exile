@@ -12,8 +12,8 @@
   "incinerateNonBuildable": "true",
 
   "requirements": [
-    "m-part/250",
-    "t-part/200",
+    "m-part/200",
+    "t-part/175",
     "smart-compound/50"
   ],
 

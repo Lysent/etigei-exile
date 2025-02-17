@@ -41,6 +41,7 @@
 
   "requirements": [
     "m-part/3",
+    "t-part/1",
     "tin/65",
     "alumin/25",
     "silver/5"

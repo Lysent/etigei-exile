@@ -9,7 +9,7 @@
   "hasPower": true,
   "hasItems": true,
   "itemCapacity": 16,
-  "speed": 48,
+  "speed": 16,
   "rotate": true,
   "regionRotated1": 1,
   "conductivePower": true,

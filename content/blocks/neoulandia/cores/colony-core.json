@@ -13,9 +13,9 @@
   "incinerateNonBuildable": "true",
 
   "requirements": [
-    "tin/1000",
-    "alumin/1000",
-    "silver/850"
+    "tin/750",
+    "alumin/750",
+    "silver/500"
   ],
 
   "research": {
