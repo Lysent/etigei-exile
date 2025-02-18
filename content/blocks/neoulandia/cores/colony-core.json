@@ -9,7 +9,7 @@
   "isFirstTier": true,
   "alwaysUnlocked": true,
   "unitType": "governate",
-  "unitCapModifier": "0",
+  "unitCapModifier": "10",
   "incinerateNonBuildable": "true",
 
   "requirements": [
