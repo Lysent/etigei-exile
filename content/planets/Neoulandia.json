@@ -21,6 +21,8 @@
   "allowSectorInvasion": true,
   "allowLaunchToNumbered": false,
   "radius": 1,
+  "allowLaunchLoadout": true,
+  "allowLaunchSchematics": false,
 
   "hiddenItems": [
     "copper",
