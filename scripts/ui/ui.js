@@ -5,7 +5,7 @@ const linkButton = url => () => {
 	}
 };
 
-// const UpdateChecker = require("./autoUpdater")
+const UpdateChecker = require("./autoUpdater")
 
 const NewsDialog = () => {
 	let dialog;
@@ -24,8 +24,9 @@ const NewsDialog = () => {
 		dialog.addCloseListener();
 
 		const news = getNews();
-		// const checker = UpdateChecker();
-		// checker.init();
+		const checker = UpdateChecker();
+		checker.init();
+		MainMenu();
 
 		onResize(() => {
 			dialog.cont.clear();
@@ -35,6 +36,15 @@ const NewsDialog = () => {
 		});
 
 		dialog.show();
+	};
+
+	const MainMenu = () => {
+		Vars.ui.menuGroup["fill(arc.func.Cons)"](c => {
+			c.bottom().left();
+			c.button(Icon.list, () => {
+				dialog.show();
+			}).size(60, 60);
+		});
 	};
 
 	const loadBody = (news) => {
@@ -50,7 +60,7 @@ const NewsDialog = () => {
 		dialog.cont.row();
 		dialog.cont["table(arc.func.Cons)"](t => {
 			t.defaults().size(152 * 4, 42).pad(3);
-			t.button("Please star the mod on GitHub if you've appreciated", Icon.star, linkButton(urlGithub));
+			t.button("Please star the mod on GitHub if you've enjoyed", Icon.star, linkButton(urlGithub));
 		}).center().fillX();
 	};
 
