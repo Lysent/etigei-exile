@@ -4,6 +4,8 @@
     "difficulty": 1,
     "alwaysUnlocked": true,
     "captureWave": 3,
+
+    "addStartingItems": true,
     
     "research": {
       "parent": "colony-core"
