@@ -1,0 +1,25 @@
+{
+  "name": "Mining Core",
+  "type": "CoreBlock",
+  
+  "size": 3,
+  "health": 2500,
+  "itemCapacity": 2500,
+  "solid": false,
+  "isFirstTier": true,
+  "alwaysUnlocked": true,
+  "unitType": "governate-ground",
+  "unitCapModifier": "10",
+  "incinerateNonBuildable": "true",
+
+  "requirements": [
+    "tin/550",
+    "alumin/550",
+    "silver/500"
+  ],
+
+  "category": "effect",
+  "research": {
+    "parent": "cistern"
+  }
+}

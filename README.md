@@ -6,7 +6,7 @@
 
 ## **Etigei Exilium**
 
-Succesor to the defunct and incomplete v6 Etigeox mod. After four years of intermittent development, the latest iteration of the Etigeox mod has finally released! Etigei Exile offers a fresh and uniquely creative modded experience, featuring 19 sectors over 2 planets.
+Succesor to the defunct and incomplete v6 Etigeox mod. After four years of intermittent development, the latest iteration of the Etigeox mod has finally released! Etigei Exile offers a fresh and uniquely creative modded experience, featuring 20 sectors over 2 planets.
 
 Establish colonies on the frozen planet of Neoulandia and experience destructible environment, such as destructible trees from which you can harvest timber, emphasis on unit cargo, and unique map design. The entire Neoulandia campaign is intimately interconnected with each map being adjacent and connected, branching into economy-focused sectors or classic survival or attack maps.
 
@@ -36,6 +36,11 @@ Future updates will continue to build on gameplay depth, with new units, maps, a
 ### **The sprites aren’t great!**  
 We aren't great at spriting.
 
-## **Developed by:**  
+## **Credits**
+Mod Authors:  
 - Mitemi
-- Superwibr  
+- Superwibr 
+
+Playtesters:
+- Gravitegg
+- Skillode

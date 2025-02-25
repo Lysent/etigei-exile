@@ -19,7 +19,7 @@
 
   "category": "effect",
   "research": {
-    "parent": "cistern"
+    "parent": "ground-core"
   },
   "researchCost": [
     "research-materia1/1"

@@ -8,6 +8,7 @@
   "isEnemy": false,
   "coreUnitDock": true,
   "hitSize": 2,
+  "lowAltitude" : true,
   
   "buildSpeed": 1,
   "speed": 4,

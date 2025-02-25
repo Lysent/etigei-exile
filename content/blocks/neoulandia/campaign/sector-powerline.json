@@ -1,0 +1,11 @@
+{
+  "localizedName": "Sector Powerline",
+  "type": "SolarGenerator",
+  "hidden": true,
+
+  "health": 50,
+  "size": 1,
+  "hasPower": true,
+  "powerCapacity": 1000,
+  "powerProduction": 6
+}

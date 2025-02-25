@@ -1,0 +1,41 @@
+{
+  "localizedName": "Aedile",
+  "description": "Elite aircraft outfitted for colonial governors. Mining version.",
+  "type": "mech",
+
+  "health": 250,
+  "armor": 0,
+  "flying": false,
+  "isEnemy": false,
+  "hitSize": 8,
+
+  "logicControllable": false,
+  "playerControllable": true,
+  "speed": 1.5,
+  "drag": 1.2,
+  "targetDistance": 40,
+  "canBoost": false,
+
+  "coreUnitDock": true,
+  "buildSpeed": 1,
+
+  "weapons": [
+    {
+      "name": "trillium-gun",
+      "top": false,
+      "x": 0,
+      "y": 0.6,
+      "reload": 15,
+      "shots": 4,
+      "inaccuracy": 5,
+      "shootSound": "blaster",
+      "bullet": {
+        "speed": 3.5,
+        "lifetime": 40,
+        "damage": 2.5
+      }
+    }
+  ],
+
+  "alwaysUnlocked": true
+}
