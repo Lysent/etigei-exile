@@ -1,15 +1,29 @@
+[gray] 21/02/2025
+[white] - Added new map: "Collier Chamber"
+- Added update and changelog menu buttons on title screen
+- Added new blocks: Capsule Launcher and Mining Core
+- Added new unit: Aedile
+
+- Changed Neoulandia to allow starting loadouts (Start with more resources)
+- Revamped map "Serorjoen Mountains" to use the new underground core.
+- Buffed Passage
+- Nerfed Loading Dockyard
+- Buffed Colony Core and Frontline Core by lowering costs
+- Buffed Oil Generator (Serpulo)
+
 [gray] 11/02/2025
 [white] - Timber (EDT) is now a required dependency
 Existing timber in cores or containers will be deleted; timber can still be acquired through breaking trees.
 
-Added 20 blocks, 3 items, 1 unit, and 1 map:
+Added 20 blocks, 3 items, 2 units, and 1 map:
 - Added greater ore, elite research materials, nickel, and platinum
 - Adds greater extractor and mineral purifier
 - Adds slag melter and smeltery
 - Adds loading dockyard (T2), platinum conveyor, platinum bridge, platinum junction and router.s
 - Adds research consortium, mender, nickel battery, platinum walls, incinerator
 - Adds turrets: battlement, loophole, machiolation, redoubt
-- Adds map:
+- Adds map: Waterfall
+- Adds units: Freight and Heavy Strix
 
 - Docks Loading Station now ignores the unit limit.
 - Unit limit nerfed
@@ -32,7 +46,7 @@ Added 20 blocks, 3 items, 1 unit, and 1 map:
 [white] - Added startup UI
 
 [gray] 19/12/2024
-[white] - Added "Ice Spikes" map
+[white] - Added map: "Ice Spikes"
  - Buffed Tour turret
  - Buffed Composite Walls
  - Fixed unit sounds
