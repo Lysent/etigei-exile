@@ -13,7 +13,7 @@
   "powerCapacity": 1000,
   "updateEffect": "steam",
   "craftEffect": "plasticExplosion",
-  "powerProduction": 8,
+  "powerProduction": 10,
 
   "consumes": {
     "liquid": "oil/0.2"

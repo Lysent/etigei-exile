@@ -1,6 +1,6 @@
 {
   "localizedName": "Water Extractor",
-  "description": "Harvests water through melting ice. Only effective on blue ice.",
+  "description": "Harvests water through melting ice. Only cost effective on blue ice.",
   "health": 80,
   "type": "SolidPump",
   "size": 2,

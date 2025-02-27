@@ -11,6 +11,10 @@
   "itemCapacity": 64,
   "unitType": "freight",
 
+  "consumes": {
+    "power": 3
+  },
+
   "requirements": [
     "t-part/5",
     "nickel/8"

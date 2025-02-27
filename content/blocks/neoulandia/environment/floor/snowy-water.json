@@ -3,7 +3,7 @@
   "speedMultiplier": 0.8,
   "statusDuration": 50,
   "albedo": 0.9,
-  "mapColor": "ccfffe",
+  "mapColor": "95dbdb",
   "isLiquid": "true",
   "liquidDrop": "water",
   "cacheLayer": "water",
