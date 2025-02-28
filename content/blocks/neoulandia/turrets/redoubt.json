@@ -11,11 +11,11 @@
   "reload": 0.001,
   "recoil": 2,
   "shake": 2,
-  "range": 200,
+  "range": 150,
   "inaccuracy": 1,
   "shootSound": "laserbig",
   "firingMoveFract": 1,
-  "shootDuration": 3,
+  "shootDuration": 1,
   "heatRequirement": 10,
 
   "consumes": {
@@ -24,8 +24,8 @@
 
   "shootType": {
       "type": "ContinuousLaserBulletType",
-      "damage": 5,
-      "length": 200,
+      "damage": 10,
+      "length": 150,
       "hitColor": "c90d00",
       "width": 1,
       "drawSize": 15

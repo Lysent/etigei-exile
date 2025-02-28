@@ -1,6 +1,8 @@
 Item("tin");
 Item("alumin");
 Item("silver");
+Item("nickel");
+Item("platinum");
 Item("m-part");
 Item("t-part");
 Item("hautite");

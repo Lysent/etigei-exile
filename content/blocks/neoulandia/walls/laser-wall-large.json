@@ -2,7 +2,7 @@
   "localizedName": "Large APS Reactive Wall",
   "description": "A solid wall that intercepts some bullets.",
   "type": "ShieldWall",
-  "health": 4400,
+  "health": 2400,
   "size": 2,
 
   "conductivePower": true,

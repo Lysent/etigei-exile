@@ -31,15 +31,17 @@
       "name": "rockcress-gun",
       "top": false,
       "x": 0,
-      "y": 0.6,
-      "reload": 5,
-      "shots": 2,
+      "y": 6,
+      "reload": 4,
+      "shoot": {
+        "shots": 2
+      },
       "inaccuracy": 15,
       "shootSound": "blaster",
       "bullet": {
         "speed": 3.25,
         "lifetime": 35,
-        "damage": 5
+        "damage": 3.5
       }
     }
   ],

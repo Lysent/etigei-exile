@@ -2,7 +2,7 @@
   "localizedName": "Platinum Wall",
   "description": "A solid wall that reflects some bullets.",
   "type": "wall",
-  "health": 1000,
+  "health": 625,
   "size": 1,
   "chanceDeflect": 6,
   "requirements": [

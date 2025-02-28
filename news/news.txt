@@ -1,3 +1,11 @@
+[gray] 03/03/2025
+[white] - Balanced turrets: creneau, machicoulis, parapet, redoubt, tour.
+- Balanced walls: barrier, platinum wall, adaptive wall
+- Balanced units: Harfang, Snapdragon, Boechera, Fireweed, Trillium, Praetor, Heavy Strix
+- Updated Large Storage Unit sprite
+- Reordered Nickel and Platinum to be in line with other base materials
+- Revamped map: Ice Spikes
+
 [gray] 21/02/2025
 [white] - Added new map: "Collier Chamber"
 - Added update and changelog menu buttons on title screen

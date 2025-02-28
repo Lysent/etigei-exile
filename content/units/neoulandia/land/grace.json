@@ -33,9 +33,11 @@
       "x": 0,
       "y": 0.6,
       "reload": 225,
-      "shots": 2,
       "inaccuracy": 0,
       "shootSound": "artillery",
+      "shoot": {
+        "shots": 2
+      },
       "bullet": {
         "type": "ArtilleryBulletType",
         "speed": 2.5,

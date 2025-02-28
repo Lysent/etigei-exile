@@ -8,8 +8,7 @@
 
   "targetAir": false,
   "targetGround": true,
-  "reload": 10,
-  "shots": 2,
+  "reload": 25,
   "range": 125,
   "inaccuracy": 1,
   "shootSound": "bang",
@@ -33,7 +32,7 @@
       "buildingDamageMultiplier": 0.01,
       "ammoMultiplier": 1,
 
-      "homingPower": 0.01
+      "homingPower": 0.1
     },
     "coal": {
       "speed": 2.5,

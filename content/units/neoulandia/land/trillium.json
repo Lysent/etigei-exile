@@ -19,16 +19,35 @@
     {
       "name": "trillium-gun",
       "top": false,
-      "x": 0,
+      "x": -4,
       "y": 0.6,
       "reload": 15,
-      "shots": 4,
       "inaccuracy": 5,
       "shootSound": "blaster",
+      "shoot": {
+        "shots": 2
+      },
       "bullet": {
         "speed": 3.5,
         "lifetime": 40,
-        "damage": 5
+        "damage": 10
+      }
+    },
+    {
+      "name": "trillium-gun",
+      "top": false,
+      "x": 4,
+      "y": 0.6,
+      "reload": 15,
+      "inaccuracy": 5,
+      "shootSound": "blaster",
+      "shoot": {
+        "shots": 2
+      },
+      "bullet": {
+        "speed": 3.5,
+        "lifetime": 40,
+        "damage": 10
       }
     }
   ],

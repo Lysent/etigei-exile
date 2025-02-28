@@ -11,7 +11,7 @@
 
   "logicControllable": true,
   "playerControllable": true,
-  "speed": 0.2,
+  "speed": 0.4,
   "drag": 2,
   "targetDistance": 70,
   "rotateSpeed": 7.5,
@@ -31,19 +31,21 @@
       "name": "fireweed-gun",
       "top": false,
       "x": 0,
-      "y": 0.6,
+      "y": 6,
       "reload": 250,
-      "shots": 1,
+      "shoot": {
+        "shots": 1
+      },
       "inaccuracy": 0,
       "shootSound": "artillery",
       "bullet": {
         "type": "ArtilleryBulletType",
         "speed": 2.5,
         "lifetime": 70,
-        "damage": 50,
+        "damage": 65,
         "width": 2,
         "height": 4,
-        "splashDamage": 35,
+        "splashDamage": 45,
         "splashDamageRadius": 5
       }
     }

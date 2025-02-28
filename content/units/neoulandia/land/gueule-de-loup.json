@@ -3,8 +3,8 @@
   "description": "Fast glass-canon type hovercraft.",
   "type": "tank",
 
-  "health": 450,
-  "armor": 3,
+  "health": 500,
+  "armor": 4.5,
   "flying": false,
   "isEnemy": false,
   "hitSize": 14,
@@ -30,9 +30,8 @@
       "name": "snapgdragon-gun",
       "top": false,
       "x": 0,
-      "y": 0.6,
+      "y": 7,
       "reload": 10,
-      "shots": 2,
       "inaccuracy": 10,
       "shootSound": "bang",
       "bullet": {

@@ -9,27 +9,27 @@
   "targetAir": true,
   "targetGround": true,
   "reload": 4,
-  "shots": 3,
   "range": 95,
   "inaccuracy": 0,
   "shootSound": "bang",
+  "shoot": {
+    "shots": 3
+  },
 
   "ammoTypes": {
     "alumin": {
-      "type": "FlakBulletType",
       "speed": 3,
       "lifetime": 25,
-      "damage": 20,
+      "damage": 5,
       "width": 1,
       "height": 1,
       "buildingDamageMultiplier": 0.01,
       "ammoMultiplier": 2
     },
     "silicon": {
-      "type": "FlakBulletType",
       "speed": 5,
       "lifetime": 19,
-      "damage": 25,
+      "damage": 5,
       "width": 2,
       "height": 4,
       "buildingDamageMultiplier": 0.01,
@@ -38,17 +38,17 @@
       "homingPower": 0.01
     },
     "d-part": {
-      "type": "FlakBulletType",
+      "type": "ArtilleryBulletType",
       "speed": 5,
       "lifetime": 19,
-      "damage": 40,
+      "damage": 7.5,
       "width": 1,
       "height": 1,
       "buildingDamageMultiplier": 0.01,
       "ammoMultiplier": 5,
 
-      "splashDamage": 2.5,
-      "splashDamageRadius": 3
+      "splashDamage": 10,
+      "splashDamageRadius": 15
     }
   },
 

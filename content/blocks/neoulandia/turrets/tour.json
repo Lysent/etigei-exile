@@ -9,10 +9,12 @@
   "targetAir": true,
   "targetGround": false,
   "reload": 10,
-  "shots": 8,
   "range": 182,
   "inaccuracy": 10,
   "shootSound": "bang",
+  "shoot": {
+    "shots": 4
+  },
   
   "ammoTypes": {
     "alumin": {
@@ -23,7 +25,7 @@
       "width": 1.5,
       "height": 1.5,
       "splashDamage": 20,
-      "splashDamageRadius": 20,
+      "splashDamageRadius": 15,
       "ammoMultiplier": 6
     },
     "d-part": {
@@ -34,7 +36,7 @@
       "width": 2,
       "height": 2,
       "splashDamage": 45,
-      "splashDamageRadius": 25.5,
+      "splashDamageRadius": 17.5,
       "ammoMultiplier": 12
     }
   },

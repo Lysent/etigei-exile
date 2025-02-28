@@ -20,13 +20,15 @@
       "x": 0,
       "y": 0.6,
       "reload": 15,
-      "shots": 2,
-      "inaccuracy": 25,
+      "shoot": {
+        "shots": 2
+      },
+      "inaccuracy": 5,
       "shootSound": "bang",
       "bullet": {
         "speed": 2.5,
         "lifetime": 50,
-        "damage": 25
+        "damage": 10
       }
     }
   ]

@@ -25,7 +25,9 @@
       "x": 0,
       "y": 0.6,
       "reload": 15,
-      "shots": 2,
+      "shoot": {
+        "shots": 2
+      },
       "inaccuracy": 25,
       "shootSound": "bang",
       "bullet": {

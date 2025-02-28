@@ -5,7 +5,7 @@
   "health": 65,
   "size": 1,
   "requirements": [
-    "tin/2"
+    "tin/1"
   ],
 
   "category": "defense",

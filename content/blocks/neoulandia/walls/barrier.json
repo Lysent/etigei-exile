@@ -2,7 +2,7 @@
   "localizedName": "Composite Barrier",
   "description": "A solid and robust yet cost effective wall.",
   "type": "wall",
-  "health": 600,
+  "health": 450,
   "size": 1,
   "requirements": [
     "tin/8"

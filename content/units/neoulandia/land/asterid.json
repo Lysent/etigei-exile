@@ -33,7 +33,6 @@
       "x": 0,
       "y": 0.6,
       "reload": 10,
-      "shots": 1,
       "inaccuracy": 0,
       "shootSound": "bang",
       "bullet": {
@@ -53,7 +52,6 @@
       "x": 0,
       "y": 0.6,
       "reload": 5,
-      "shots": 1,
       "inaccuracy": 15,
       "shootSound": "blaster",
       "bullet": {
@@ -68,7 +66,6 @@
       "x": 0,
       "y": 0.6,
       "reload": 5,
-      "shots": 1,
       "inaccuracy": 15,
       "shootSound": "blaster",
       "bullet": {

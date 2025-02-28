@@ -2,7 +2,7 @@
   "localizedName": "Large Composite Barrier",
   "description": "A larger solid and robust yet cost effective wall.",
   "type": "wall",
-  "health": 2400,
+  "health": 1800,
   "size": 2,
   "requirements": [
     "tin/32"

@@ -10,7 +10,6 @@
   "targetAir": true,
   "targetGround": true,
   "reload": 12,
-  "shots": 2,
   "range": 160,
   "inaccuracy": 0,
   "shootSound": "lasershoot",
