@@ -30,8 +30,8 @@ The Etigeox mod began in 2021 as a project to create a Mindustry mod with conten
 ### **What is the Etigeox Universe?**  
 The Etigeox Universe is a collaborative creative writing project by mod authors Mitemi and Superwibr. Though, no content has officially been published, extensive worldbuilding and a short novel have been completed. Message the developers on Discord for more information.
 
-### **What’s next?**  
-Future updates will continue to build on gameplay depth, with new units, maps, and lore-rich mechanics planned for upcoming phases. See the roadmap above.
+### **Why do you say the mod adds over 160 blocks?**  
+While a hundred are visible in the content view of the mod or the core database, there are around 50 blocks that are hidden for campaign purposes, such as the destructible envrionment blocks, or the doppelganger cores in Rubiginosus.
 
 ### **The sprites aren’t great!**  
 We aren't great at spriting.
