@@ -1,25 +1,26 @@
 {
-  "localizedName": "Air Manufacture",
-  "description": "Produces a variety of airborne units.",
+  "localizedName": "Specialized Manufacture",
+  "description": "Produces a variety of specially-made units fit for specialization.",
   "type": "UnitFactory",
   
   "health": 100,
-  "size": 2,
+  "size": 3,
 
   "plans": [
     {
-      "unit": "harfang",
+      "unit": "strix",
       "time": 200,
       "requirements": [
         "t-part/18",
-        "silver/12"
+        "d-part/12",
+        "nickel/8"
       ]
     }
   ],
   "configurable": true,
 
   "consumes": {
-    "power": 8
+    "power": 16
   },
 
   "requirements": [

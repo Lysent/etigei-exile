@@ -1,5 +1,5 @@
 {
-  "localizedName": "Air Manufacture",
+  "localizedName": "Reconstructor",
   "description": "Produces a variety of airborne units.",
   "type": "Reconstructor",
   
@@ -7,7 +7,7 @@
   "size": 2,
 
   "consumes": {
-    "power": 8
+    "power": 12
   },
 
   "requirements": [
