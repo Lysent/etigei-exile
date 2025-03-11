@@ -5,7 +5,70 @@ const linkButton = url => () => {
 	}
 };
 
-const UpdateChecker = require("./autoUpdater")
+// Updater
+
+const UpdateChecker = () => {
+	let updateAvailable = false;
+	let updateBuild;
+
+	const init = () => {
+		Vars.ui.menuGroup["fill(arc.func.Cons)"](c => {
+			c.bottom().left();
+			c.button(Icon.refresh, () => {
+				Vars.ui.loadfrag.show();
+				checkUpdate(result => {
+					Vars.ui.loadfrag.hide();
+					if (!result) {
+						Vars.ui.showInfo("@be.noupdates");
+					}
+				});
+			}).size(60, 60).padLeft(60);
+		});
+	};
+
+	const checkUpdate = (done) => {
+		Http.get("https://raw.githubusercontent.com/Lysent/etigei-exile/refs/heads/main/mod.json")
+			.error(e => {
+				done.get(false);
+			})
+			.submit(res => {
+
+				const json = JSON.parse(res.getResultAsString());
+				const version = json.tag_name;
+				if (version) {
+					done(false);
+				} else {
+					updateAvailable = true;
+					updateBuild = version;
+					showUpdateDialog();
+					done(true); 2
+				}
+			});
+	};
+
+	const showUpdateDialog = () => {
+		Vars.ui.showCustomConfirm(
+			Core.bundle.format("etigeox.update", updateBuild), "@etigeox.update.description",
+			"@ok", "@cancel",
+			() => {
+				Vars.ui.showCustomConfirm("", "AAAA", "@ok", "@cancel",
+					() => Core.app.exit(), () => { }
+				);
+				Vars.ui.mods.githubImportMod("Lysent/etigei-exile", false);
+				updateAvailable = false;
+			},
+			() => { }
+		);
+	};
+
+	return {
+		init: init,
+		checkUpdate: checkUpdate,
+		showUpdateDialog: showUpdateDialog
+	}
+}
+
+// Startup UI
 
 const NewsDialog = () => {
 	let dialog;
@@ -27,6 +90,7 @@ const NewsDialog = () => {
 		const checker = UpdateChecker();
 		checker.init();
 		MainMenu();
+		MapButton();
 
 		onResize(() => {
 			dialog.cont.clear();
@@ -113,6 +177,65 @@ const NewsDialog = () => {
 		load: load
 	};
 };
+
+// Map UI
+
+const MapButton = () => {
+	Vars.ui.menuGroup["fill(arc.func.Cons)"](c => {
+		c.bottom().left();
+		c.button(Icon.terrain, () => {
+			MapDialog();
+		}).size(60, 60).padBottom(60);
+	});
+}
+
+const MapDialog = (mapname, dim) => {
+	const SectorDialog = new BaseDialog(Core.bundle.format("etigeox.map.title"));
+	let map = mapname || "etigeox-regions";
+	let dim = dim || {
+		height: 625,
+		width: 500,
+		mHeight: 625,
+		mWidth: 500,
+	};
+
+	SectorDialog.addCloseListener();
+
+	SectorDialog.cont["table(arc.func.Cons)"](t => {
+		t.defaults().size(64 * 4, 64).pad(3);
+		t.button(Core.bundle.format("etigeox.map.tab1"), Icon.terrain, () => {
+			SectorDialog.hide();
+			MapDialog("etigeox-regions", {
+				height: 625,
+				width: 500,
+				mHeight: 625,
+				mWidth: 500,
+			});
+		});
+		t.button(Core.bundle.format("etigeox.map.tab2"), Icon.terrain, () => {
+			SectorDialog.hide();
+			MapDialog("etigeox-map-neoulandia", {
+				height: 560,
+				width: 1000,
+				mHeight: 350,
+				mWidth: 640,
+			});
+		});
+	}).center().fillX().row();
+
+	SectorDialog.cont.image(Core.atlas.find(map, Core.atlas.find("clear")))
+		.height(Vars.mobile ? dim.mHeight : dim.height).width(Vars.mobile ? dim.mWidth : dim.width).pad(3).center()
+		.row();
+
+	SectorDialog.cont["table(arc.func.Cons)"](t => {
+		t.defaults().size(128 * 4, 64).pad(3);
+		t.button("@close", Icon.cancel, () => SectorDialog.hide());
+	}).center().fillX();
+
+	SectorDialog.show();
+};
+
+// Startup
 
 Events.on(ClientLoadEvent, () => {
 	const newsInstance = NewsDialog();
