@@ -10,22 +10,22 @@ const chainNode = (parent, research) => {
         }
     }
 
-    log("etigeox", "created tech node");
+    //log("etigeox", "created tech node");
 
     if (research.planet) node.planet = Vars.content.getByName(ContentType.planet, research.planet);
 
-    log("etigeox", "updated planet");
+    //log("etigeox", "updated planet");
 
     if (!parent.children.contains(node)) {
         parent.children.add(node);
     }
 
-    log("etigeox", "childed node");
+    //log("etigeox", "childed node");
 
     //reparent the node
     node.parent = parent;
 
-    log("etigeox", "reparented node");
+    //log("etigeox", "reparented node");
 
     return node;
 };
@@ -33,7 +33,7 @@ const chainNode = (parent, research) => {
 const addTechNode = (research) => {
     const parent = TechTree.all.find(t => t !== undefined && t.content == research.parent && (t.planet !== null ? t.planet == research.planet : true));
 
-    log("etigeox", "(potentially) found parent");
+    //log("etigeox", "(potentially) found parent");
 
     const node = chainNode(parent, research);
 
