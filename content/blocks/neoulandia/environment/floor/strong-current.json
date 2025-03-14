@@ -1,12 +1,16 @@
 {
   "type": "ShallowLiquid",
-  "speedMultiplier": 0.8,
+  "speedMultiplier": 2.5,
   "statusDuration": 50,
   "albedo": 0.9,
-  "mapColor": "3a4681",
+  "mapColor": "43518f",
+  "attributes": {
+    "current": 5
+  },
   "isLiquid": "true",
   "liquidDrop": "water",
   "cacheLayer": "water",
   "supportsOverlay": true,
-  "variants": 1
+  "variants": 0
+  
 }

@@ -1,0 +1,8 @@
+{
+  "type": "Floor",
+  "attributes": {
+    "water": 5
+  },
+  "albedo": 0.65,
+  "variants": 3
+}

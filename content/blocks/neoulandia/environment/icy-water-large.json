@@ -1,0 +1,13 @@
+{
+  "localizedName": "Icy Water",
+  "type": "Wall",
+  "size": 2,
+  "health": 70,
+  "mapColor": "a3cbff",
+  "breakable": false,
+  "hidden": true,
+  "alwaysReplace": false,
+  "variants": 0,
+  "buildVisibility": "editorOnly",
+  "category": "effect"
+}

@@ -1,0 +1,9 @@
+{
+  "type": "Floor",
+  "attributes": {
+    "water": 2
+  },
+  "BlendGroup": "snow",
+  "albedo": 0.65,
+  "variants": 0
+}

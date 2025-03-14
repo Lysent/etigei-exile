@@ -1,0 +1,10 @@
+{
+  "type": "Floor",
+  "attributes": {
+    "salt": 5,
+    "water": -0.2,
+    "oil": 0.3
+  },
+  "albedo": 0.65,
+  "variants": 0
+}
