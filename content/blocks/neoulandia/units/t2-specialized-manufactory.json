@@ -15,8 +15,18 @@
         "d-part/12",
         "nickel/8"
       ]
+    },
+    {
+      "unit": "asterid",
+      "time": 200,
+      "requirements": [
+        "t-part/12",
+        "d-part/18",
+        "nickel/20"
+      ]
     }
   ],
+  
   "configurable": true,
 
   "consumes": {

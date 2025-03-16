@@ -6,8 +6,19 @@
   "health": 100,
   "size": 2,
 
+  "upgrades": [
+    ["strix", "strix-heavy"],
+    ["epilobe", "grace"]
+  ],
+
   "consumes": {
-    "power": 12
+    "power": 12,
+    "items": {
+      "items": [
+        "platinum/10",
+        "smart-compound/10"
+      ]
+    }
   },
 
   "requirements": [

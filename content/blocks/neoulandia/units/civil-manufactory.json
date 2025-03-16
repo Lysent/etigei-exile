@@ -22,6 +22,24 @@
         "t-part/10",
         "tin/8"
       ]
+    },
+    {
+      "unit": "myrica",
+      "time": 120,
+      "requirements": [
+        "t-part/20",
+        "nickel/10",
+        "alumin/16"
+      ]
+    },
+    {
+      "unit": "cercis",
+      "time": 120,
+      "requirements": [
+        "t-part/25",
+        "platinum/10",
+        "smart-compound/16"
+      ]
     }
   ],
   "configurable": true,
