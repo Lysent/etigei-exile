@@ -11,39 +11,52 @@ const UpdateChecker = () => {
 	let updateAvailable = false;
 	let updateBuild;
 
-	const init = () => {
-		Vars.ui.menuGroup["fill(arc.func.Cons)"](c => {
-			c.bottom().left();
-			c.button(Icon.refresh, () => {
-				Vars.ui.loadfrag.show();
-				checkUpdate(result => {
-					Vars.ui.loadfrag.hide();
-					if (!result) {
-						Vars.ui.showInfo("@be.noupdates");
-					}
-				});
-			}).size(60, 60).padLeft(60);
+	const init = additionalUpdateButton => {
+		checkUpdate(() => {
+			Vars.ui.menuGroup["fill(arc.func.Cons)"](c => {
+				c.bottom().left();
+				const updateButton = c.button(Icon.refresh, () => checkUpdateGUI())
+					.size(60, 60)
+					.padLeft(60);
+
+				paintButton(updateButton);
+			});
 		});
 	};
 
-	const checkUpdate = (done) => {
+	const paintButton = btn => {
+		if(updateAvailable) btn.get().setColor(255, 0, 0, 1);
+		return btn;
+	}
+
+	const checkUpdate = res => {
+		Vars.ui.loadfrag.show();
 		Http.get("https://raw.githubusercontent.com/Lysent/etigei-exile/refs/heads/main/mod.json")
 			.error(e => {
-				done.get(false);
+				Vars.ui.loadfrag.hide();
+				res(false);
 			})
 			.submit(res => {
+				Vars.ui.loadfrag.hide();
 
 				const json = JSON.parse(res.getResultAsString());
-				const version = json.tag_name;
-				if (version) {
-					done(false);
+				const version = json.version;
+				if (version === Vars.mods.getMod("etigeox").meta.version) {
+					res(false);
 				} else {
 					updateAvailable = true;
 					updateBuild = version;
-					showUpdateDialog();
-					done(true); 2
+					res(true);
 				}
 			});
+	};
+
+	const checkUpdateGUI = () => {
+		if (!updateAvailable) {
+			Vars.ui.showInfo("@be.noupdates");
+		} else {
+			showUpdateDialog();
+		}
 	};
 
 	const showUpdateDialog = () => {
@@ -63,6 +76,7 @@ const UpdateChecker = () => {
 
 	return {
 		init: init,
+		paintButton: paintButton,
 		checkUpdate: checkUpdate,
 		showUpdateDialog: showUpdateDialog
 	}
@@ -71,7 +85,7 @@ const UpdateChecker = () => {
 // Startup UI
 
 const NewsDialog = () => {
-	let dialog;
+	let dialog, news, checker;
 
 	const mod = Vars.mods.getMod("etigeox");
 
@@ -86,8 +100,8 @@ const NewsDialog = () => {
 
 		dialog.addCloseListener();
 
-		const news = getNews();
-		const checker = UpdateChecker();
+		news = getNews();
+		checker = UpdateChecker();
 		checker.init();
 		MainMenu();
 		MapButton();
@@ -139,7 +153,7 @@ const NewsDialog = () => {
 				t.button("Discord", Icon.discord, linkButton(urlDiscord));
 				t.button("Wiki", Icon.book, linkButton(urlWiki));
 				t.button("GitHub", Icon.githubSquare, linkButton(urlGithub));
-				t.button("@etigeox.news.update", Icon.download, linkButton()).row();
+				checker.paintButton(t.button("@etigeox.news.update", Icon.download, linkButton())).row();
 			}).center().fillX().row();
 			dialog.cont["table(arc.func.Cons)"](t => {
 				t.defaults().size(128 * 4, 64).pad(3);
