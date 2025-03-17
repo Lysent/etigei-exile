@@ -157,7 +157,7 @@ const NewsDialog = () => {
 
 	const loadButtons = () => {
 		//Check if not on mobile Landscape mode
-		if (!(Vars.mobile && !Core.graphics.isPortrait())) {
+		if (true || !(Vars.mobile && !Core.graphics.isPortrait())) {
 			dialog.cont.row();
 
 			dialog.cont["table(arc.func.Cons)"](t => {
