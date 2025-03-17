@@ -11,23 +11,33 @@ const UpdateChecker = () => {
 	let updateAvailable = false;
 	let updateBuild;
 
-	const init = additionalUpdateButton => {
-		checkUpdate(() => {
-			Vars.ui.menuGroup["fill(arc.func.Cons)"](c => {
-				c.bottom().left();
-				const updateButton = c.button(Icon.refresh, () => checkUpdateGUI())
-					.size(60, 60)
-					.padLeft(60);
+	const buttons = [];
 
-				paintButton(updateButton);
-			});
+	const init = res => {
+		Vars.ui.menuGroup["fill(arc.func.Cons)"](c => {
+			c.bottom().left();
+			const updateButton = c.button(Icon.refresh, () => checkUpdateGUI())
+				.size(60, 60)
+				.padLeft(60);
+
+			addButton(updateButton);
+		});
+
+		checkUpdate(() => {
+			if (res) res();
+			paintButtons();
 		});
 	};
 
-	const paintButton = btn => {
-		if(updateAvailable) btn.get().setColor(255, 0, 0, 1);
+	const paintButtons = () => {
+		if (!updateAvailable) return;
+		buttons.forEach(btn => btn.get().setColor(255, 0, 0, 1))
+	};
+
+	const addButton = btn => {
+		buttons.push(btn);
 		return btn;
-	}
+	};
 
 	const checkUpdate = res => {
 		Vars.ui.loadfrag.show();
@@ -76,8 +86,10 @@ const UpdateChecker = () => {
 
 	return {
 		init: init,
-		paintButton: paintButton,
+		paintButtons: paintButtons,
+		addButton: addButton,
 		checkUpdate: checkUpdate,
+		checkUpdateGUI: checkUpdateGUI,
 		showUpdateDialog: showUpdateDialog
 	}
 }
@@ -100,11 +112,12 @@ const NewsDialog = () => {
 
 		dialog.addCloseListener();
 
-		news = getNews();
+		MapButton();
+		MainMenu();
 		checker = UpdateChecker();
 		checker.init();
-		MainMenu();
-		MapButton();
+
+		news = getNews();
 
 		onResize(() => {
 			dialog.cont.clear();
@@ -153,7 +166,10 @@ const NewsDialog = () => {
 				t.button("Discord", Icon.discord, linkButton(urlDiscord));
 				t.button("Wiki", Icon.book, linkButton(urlWiki));
 				t.button("GitHub", Icon.githubSquare, linkButton(urlGithub));
-				checker.paintButton(t.button("@etigeox.news.update", Icon.download, linkButton())).row();
+				checker.addButton(
+					t.button("@etigeox.news.update", Icon.download, () => checker.checkUpdateGUI())
+				).row();
+				checker.paintButtons();
 			}).center().fillX().row();
 			dialog.cont["table(arc.func.Cons)"](t => {
 				t.defaults().size(128 * 4, 64).pad(3);
