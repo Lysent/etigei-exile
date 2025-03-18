@@ -7,6 +7,13 @@ const linkButton = url => () => {
 
 // Updater
 
+let updateText = "@etigeox.news.update"
+let buttonUpdateText = ""
+let updateButtonSize = {
+	width: 60,
+	height: 60
+}
+
 const UpdateChecker = () => {
 	let updateAvailable = false;
 	let updateBuild;
@@ -14,16 +21,26 @@ const UpdateChecker = () => {
 	const buttons = [];
 
 	const init = res => {
-		Vars.ui.menuGroup["fill(arc.func.Cons)"](c => {
-			c.bottom().left();
-			const updateButton = c.button(Icon.refresh, () => checkUpdateGUI())
-				.size(60, 60)
-				.padLeft(60);
-
-			addButton(updateButton);
-		});
-
 		checkUpdate(() => {
+
+			if (updateAvailable) {
+				updateText = "@etigeox.news.update.available";
+				buttonUpdateText = "@etigeox.news.update.available";
+				updateButtonSize = {
+					width: 200,
+					height: 60
+				}
+			}
+
+			Vars.ui.menuGroup["fill(arc.func.Cons)"](c => {
+				c.bottom().left();
+				const updateButton = c.button(buttonUpdateText, Icon.refresh, () => checkUpdateGUI())
+					.size(updateButtonSize.width, updateButtonSize.height)
+					.padLeft(60);
+
+				addButton(updateButton);
+			});
+
 			if (res) res();
 			paintButtons();
 		});
@@ -31,7 +48,9 @@ const UpdateChecker = () => {
 
 	const paintButtons = () => {
 		if (!updateAvailable) return;
-		buttons.forEach(btn => btn.get().setColor(255, 0, 0, 1))
+		buttons.forEach(btn => {
+			btn.get().setColor(255, 0, 0, 1);
+		});
 	};
 
 	const addButton = btn => {
@@ -74,7 +93,7 @@ const UpdateChecker = () => {
 			Core.bundle.format("etigeox.update", updateBuild), "@etigeox.update.description",
 			"@ok", "@cancel",
 			() => {
-				Vars.ui.showCustomConfirm("", "AAAA", "@ok", "@cancel",
+				Vars.ui.showCustomConfirm("", "", "@ok", "@cancel",
 					() => Core.app.exit(), () => { }
 				);
 				Vars.ui.mods.githubImportMod("Lysent/etigei-exile", false);
@@ -161,13 +180,13 @@ const NewsDialog = () => {
 			dialog.cont.row();
 
 			dialog.cont["table(arc.func.Cons)"](t => {
-				t.defaults().size(148, 64).pad(3);
+				t.defaults().size(148, 72).pad(3);
 
 				t.button("Discord", Icon.discord, linkButton(urlDiscord));
 				t.button("Wiki", Icon.book, linkButton(urlWiki));
 				t.button("GitHub", Icon.githubSquare, linkButton(urlGithub));
 				checker.addButton(
-					t.button("@etigeox.news.update", Icon.download, () => checker.checkUpdateGUI())
+					t.button(updateText, Icon.download, () => checker.checkUpdateGUI())
 				).row();
 				checker.paintButtons();
 			}).center().fillX().row();
