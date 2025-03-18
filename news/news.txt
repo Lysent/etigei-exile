@@ -1,5 +1,12 @@
+[gray] 13/03/2025
+[white] - Fully revamped tutorial map: Landing Ground
+- Added new environment tiles and blocks
+- Added sectors and geographical maps of Neoulandia menu
+- Added update checking to the update button
+- Fixed the team colour of destructible ice
+
 [gray] 03/03/2025
-[white] - Balanced turrets: creneau, machicoulis, parapet, redoubt, tour.
+[white] - Balanced turrets: creneau, machicoulis, parapet, redoubt, tour
 - Balanced walls: barrier, platinum wall, adaptive wall
 - Balanced units: Harfang, Snapdragon, Boechera, Fireweed, Trillium, Praetor, Heavy Strix
 - Updated Large Storage Unit sprite
