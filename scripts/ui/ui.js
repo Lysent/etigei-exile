@@ -7,43 +7,85 @@ const linkButton = url => () => {
 
 // Updater
 
+let updateText = "@etigeox.news.update"
+let buttonUpdateText = ""
+let updateButtonSize = {
+	width: 60,
+	height: 60
+}
+
 const UpdateChecker = () => {
 	let updateAvailable = false;
 	let updateBuild;
 
-	const init = () => {
-		Vars.ui.menuGroup["fill(arc.func.Cons)"](c => {
-			c.bottom().left();
-			c.button(Icon.refresh, () => {
-				Vars.ui.loadfrag.show();
-				checkUpdate(result => {
-					Vars.ui.loadfrag.hide();
-					if (!result) {
-						Vars.ui.showInfo("@be.noupdates");
-					}
-				});
-			}).size(60, 60).padLeft(60);
+	const buttons = [];
+
+	const init = res => {
+		checkUpdate(() => {
+
+			if (updateAvailable) {
+				updateText = "@etigeox.news.update.available";
+				buttonUpdateText = "@etigeox.news.update.available";
+				updateButtonSize = {
+					width: 200,
+					height: 60
+				}
+			}
+
+			Vars.ui.menuGroup["fill(arc.func.Cons)"](c => {
+				c.bottom().left();
+				const updateButton = c.button(buttonUpdateText, Icon.refresh, () => checkUpdateGUI())
+					.size(updateButtonSize.width, updateButtonSize.height)
+					.padLeft(60);
+
+				addButton(updateButton);
+			});
+
+			if (res) res();
+			paintButtons();
 		});
 	};
 
-	const checkUpdate = (done) => {
+	const paintButtons = () => {
+		if (!updateAvailable) return;
+		buttons.forEach(btn => {
+			btn.get().setColor(255, 0, 0, 1);
+		});
+	};
+
+	const addButton = btn => {
+		buttons.push(btn);
+		return btn;
+	};
+
+	const checkUpdate = res => {
+		Vars.ui.loadfrag.show();
 		Http.get("https://raw.githubusercontent.com/Lysent/etigei-exile/refs/heads/main/mod.json")
 			.error(e => {
-				done.get(false);
+				Vars.ui.loadfrag.hide();
+				res(false);
 			})
 			.submit(res => {
+				Vars.ui.loadfrag.hide();
 
 				const json = JSON.parse(res.getResultAsString());
-				const version = json.tag_name;
-				if (version) {
-					done(false);
+				const version = json.version;
+				if (version === Vars.mods.getMod("etigeox").meta.version) {
+					res(false);
 				} else {
 					updateAvailable = true;
 					updateBuild = version;
-					showUpdateDialog();
-					done(true); 2
+					res(true);
 				}
 			});
+	};
+
+	const checkUpdateGUI = () => {
+		if (!updateAvailable) {
+			Vars.ui.showInfo("@be.noupdates");
+		} else {
+			showUpdateDialog();
+		}
 	};
 
 	const showUpdateDialog = () => {
@@ -51,7 +93,7 @@ const UpdateChecker = () => {
 			Core.bundle.format("etigeox.update", updateBuild), "@etigeox.update.description",
 			"@ok", "@cancel",
 			() => {
-				Vars.ui.showCustomConfirm("", "AAAA", "@ok", "@cancel",
+				Vars.ui.showCustomConfirm("", "", "@ok", "@cancel",
 					() => Core.app.exit(), () => { }
 				);
 				Vars.ui.mods.githubImportMod("Lysent/etigei-exile", false);
@@ -63,7 +105,10 @@ const UpdateChecker = () => {
 
 	return {
 		init: init,
+		paintButtons: paintButtons,
+		addButton: addButton,
 		checkUpdate: checkUpdate,
+		checkUpdateGUI: checkUpdateGUI,
 		showUpdateDialog: showUpdateDialog
 	}
 }
@@ -71,7 +116,7 @@ const UpdateChecker = () => {
 // Startup UI
 
 const NewsDialog = () => {
-	let dialog;
+	let dialog, news, checker;
 
 	const mod = Vars.mods.getMod("etigeox");
 
@@ -86,11 +131,12 @@ const NewsDialog = () => {
 
 		dialog.addCloseListener();
 
-		const news = getNews();
-		const checker = UpdateChecker();
-		checker.init();
-		MainMenu();
 		MapButton();
+		MainMenu();
+		checker = UpdateChecker();
+		checker.init();
+
+		news = getNews();
 
 		onResize(() => {
 			dialog.cont.clear();
@@ -130,16 +176,19 @@ const NewsDialog = () => {
 
 	const loadButtons = () => {
 		//Check if not on mobile Landscape mode
-		if (!(Vars.mobile && !Core.graphics.isPortrait())) {
+		if (true || !(Vars.mobile && !Core.graphics.isPortrait())) {
 			dialog.cont.row();
 
 			dialog.cont["table(arc.func.Cons)"](t => {
-				t.defaults().size(148, 64).pad(3);
+				t.defaults().size(148, 72).pad(3);
 
 				t.button("Discord", Icon.discord, linkButton(urlDiscord));
 				t.button("Wiki", Icon.book, linkButton(urlWiki));
 				t.button("GitHub", Icon.githubSquare, linkButton(urlGithub));
-				t.button("@etigeox.news.update", Icon.download, linkButton()).row();
+				checker.addButton(
+					t.button(updateText, Icon.download, () => checker.checkUpdateGUI())
+				).row();
+				checker.paintButtons();
 			}).center().fillX().row();
 			dialog.cont["table(arc.func.Cons)"](t => {
 				t.defaults().size(128 * 4, 64).pad(3);
