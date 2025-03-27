@@ -15,16 +15,16 @@
 - Balanced units: Harfang, Snapdragon, Boechera, Fireweed, Trillium, Praetor, Heavy Strix
 - Updated Large Storage Unit sprite
 - Reordered Nickel and Platinum to be in line with other base materials
-- Revamped map: Ice Spikes
+- Revamped environment of map: Ice Spikes
 
 [gray] 21/02/2025
-[white] - Added new map: "Collier Chamber"
+[white] - Added new map: Collier Chamber
 - Added update and changelog menu buttons on title screen
 - Added new blocks: Capsule Launcher and Mining Core
 - Added new unit: Aedile
 
 - Changed Neoulandia to allow starting loadouts (Start with more resources)
-- Revamped map "Serorjoen Mountains" to use the new underground core.
+- Revamped map Serorjoen Mountains to use the new underground core.
 - Buffed Passage
 - Nerfed Loading Dockyard
 - Buffed Colony Core and Frontline Core by lowering costs
@@ -65,7 +65,7 @@ Added 20 blocks, 3 items, 2 units, and 1 map:
 [white] - Added startup UI
 
 [gray] 19/12/2024
-[white] - Added map: "Ice Spikes"
+[white] - Added map: Ice Spikes
  - Buffed Tour turret
  - Buffed Composite Walls
  - Fixed unit sounds
@@ -76,7 +76,7 @@ Added 20 blocks, 3 items, 2 units, and 1 map:
  - Implemented French Translation
 
 [gray] 09/12/2024
-[white] - Added sector "Serorjoen Mountains"
+[white] - Added sector Serorjoen Mountains
  - Added destructible environment blocks for Serorjoen Mountains
  - Added Important Support Beams for Serorjoen Mountains
 
