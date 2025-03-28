@@ -9,6 +9,7 @@
   "coreUnitDock": true,
   "hitSize": 2,
   "lowAltitude" : true,
+  "fogRadius": 10,
   
   "buildSpeed": 1,
   "speed": 4,
