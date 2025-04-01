@@ -21,7 +21,7 @@
   "allowSectorInvasion": true,
   "allowLaunchToNumbered": false,
   "radius": 1,
-  "allowLaunchLoadout": true,
+  "allowLaunchLoadout": false,
   "allowLaunchSchematics": false,
   "addStartingItems": true,
 
