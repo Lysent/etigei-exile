@@ -6,7 +6,7 @@
 
   "allowLaunchLoadout": true,
   "allowLaunchSchematics": false,
-  "addStartingItems": false,
+  "addStartingItems": true,
 
   "research": {
     "parent": "emiss2-1",

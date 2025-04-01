@@ -1,13 +1,15 @@
 {
-    "planet": "Neoulandia",
-    "sector": 1,
-    "difficulty": 1,
-    "alwaysUnlocked": true,
-    "captureWave": 3,
+  "planet": "Neoulandia",
+  "sector": 1,
+  "difficulty": 1,
+  "alwaysUnlocked": true,
+  "captureWave": 3,
 
-    "addStartingItems": true,
-    
-    "research": {
-      "parent": "colony-core"
-    }
+  "addStartingItems": true,
+  "allowLaunchLoadout": false,
+  "allowLaunchSchematics": false,
+  
+  "research": {
+    "parent": "colony-core"
   }
+}
