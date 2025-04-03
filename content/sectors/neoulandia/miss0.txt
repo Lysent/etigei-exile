@@ -1,6 +1,6 @@
 {
     "planet": "Neoulandia",
-    "sector": 0,
+    "sector": 267,
     "difficulty": 10,
     "alwaysUnlocked": true,
     "captureWave": 1,

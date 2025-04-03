@@ -1,3 +1,9 @@
+[gray] 03/04/2025
+[white] - Added new map: Shrouded Assault
+- Added environment tile: cold ice
+- Harvesters work at 50% the efficiency of blue ice on cold ice.
+- Fixed tutorial map
+
 [gray] 20/03/2025
 [white] - Fully revamped map: Precursory Riveer
 - Revamped environment of maps: Scouting Party, Forking Pathways, Serorjoen Mountains, Collier Chamber, Ice Spikes, Waterfall

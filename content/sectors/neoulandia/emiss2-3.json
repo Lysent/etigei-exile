@@ -1,0 +1,20 @@
+{
+  "planet": "Neoulandia",
+  "sector": 31,
+  "difficulty": 3,
+  "alwaysUnlocked": false,
+
+  "allowLaunchLoadout": true,
+  "allowLaunchSchematics": false,
+  "addStartingItems": true,
+
+  "research": {
+    "parent": "emiss2-2",
+    "objectives": [
+      {
+        "type": "SectorComplete",
+        "preset": "emiss2-2"
+      }
+    ]
+  }
+}
