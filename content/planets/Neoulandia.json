@@ -5,7 +5,7 @@
 
   "orbitRadius": 37,
   "hasAtmosphere": true,
-  "updateLighting": true,
+  "updateLighting": false,
   "atmosphereRadIn": 0.1,
   "atmosphereRadOut": 0.3,
   "atmosphereColor": "7dbfe3,",
