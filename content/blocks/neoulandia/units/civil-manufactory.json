@@ -9,7 +9,7 @@
   "plans": [
     {
       "unit": "harfang-cargo",
-      "time": 220,
+      "time": 300,
       "requirements": [
         "t-part/16",
         "silver/8"
@@ -17,7 +17,7 @@
     },
     {
       "unit": "rockcress",
-      "time": 120,
+      "time": 380,
       "requirements": [
         "t-part/10",
         "tin/8"
@@ -25,7 +25,7 @@
     },
     {
       "unit": "myrica",
-      "time": 120,
+      "time": 420,
       "requirements": [
         "t-part/20",
         "nickel/10",
@@ -34,7 +34,7 @@
     },
     {
       "unit": "cercis",
-      "time": 120,
+      "time": 420,
       "requirements": [
         "t-part/25",
         "platinum/10",

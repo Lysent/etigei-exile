@@ -9,7 +9,7 @@
   "plans": [
     {
       "unit": "harfang",
-      "time": 200,
+      "time": 400,
       "requirements": [
         "t-part/18",
         "silver/12"

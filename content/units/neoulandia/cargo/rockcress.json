@@ -1,6 +1,6 @@
 {
   "localizedName": "Rockcress",
-  "description": "Mining vehicle with a built-in refinery capable of mining pure deposits.",
+  "description": "Mining vehicle equiped with omni-wheels to drift sideways, with a built-in refinery capable of mining pure deposits.\nThe Rockcress is able to mine specific ore deposits of a purer rarity than the common ones found throughout Neoulandia.",
   "type": "tank",
 
   "health": 250,
