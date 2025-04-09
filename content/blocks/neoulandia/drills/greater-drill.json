@@ -9,7 +9,7 @@
   "drillTime": 130,
   "warmupSpeed": 0.00025,
   "rotateSpeed": 4,
-  "liquidBoostIntensity": 1.55,
+  "liquidBoostIntensity": 1.25,
   "hardnessDrillMultiplier": 0.75,
   "hasPower": true,
   "hasLiquids": true,
