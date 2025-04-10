@@ -7,7 +7,7 @@
   "armor": 3,
   "flying": false,
   "isEnemy": false,
-  "hitSize": 14,
+  "hitSize": 10,
 
   "logicControllable": true,
   "playerControllable": true,
@@ -29,29 +29,29 @@
   "weapons": [
     {
       "name": "asterid-cannon",
-      "top": true,
+      "top": false,
       "x": 0,
-      "y": 0.6,
-      "reload": 10,
+      "y": 5.5,
+      "reload": 65,
       "inaccuracy": 0,
       "shootSound": "bang",
       "bullet": {
         "type": "ArtilleryBulletType",
         "speed": 2.5,
-        "lifetime": 45,
+        "lifetime": 55,
         "damage": 8,
-        "width": 2,
-        "height": 4,
-        "splashDamage": 35,
-        "splashDamageRadius": 3.5
+        "width": 10,
+        "height": 15,
+        "splashDamage": 5,
+        "splashDamageRadius": 20
       }
     },
     {
       "name": "rockcress-gun",
       "top": false,
       "x": 0,
-      "y": 0.6,
-      "reload": 5,
+      "y": 5.5,
+      "reload": 15,
       "inaccuracy": 15,
       "shootSound": "blaster",
       "bullet": {
@@ -64,8 +64,8 @@
       "name": "rockcress-gun",
       "top": false,
       "x": 0,
-      "y": 0.6,
-      "reload": 5,
+      "y": 5.5,
+      "reload": 15,
       "inaccuracy": 15,
       "shootSound": "blaster",
       "bullet": {

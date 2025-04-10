@@ -1,13 +1,13 @@
 {
   "localizedName": "Grace",
-  "description": "Heavy class mobile gun platform.",
+  "description": "Heavy class plasma railgun mobile gun platform.",
   "type": "tank",
 
   "health": 750,
   "armor": 7.5,
   "flying": false,
   "isEnemy": false,
-  "hitSize": 24,
+  "hitSize": 18,
 
   "logicControllable": true,
   "playerControllable": true,
@@ -28,25 +28,28 @@
 
   "weapons": [
     {
-      "name": "fireweed-gun",
-      "top": false,
+      "name": "grace-cannon",
+      "top": true,
+      "rotate": true,
+      "rotateSpeed": 1,
       "x": 0,
-      "y": 0.6,
-      "reload": 225,
-      "inaccuracy": 0,
+      "y": 0,
+      "reload": 35,
+      "inaccuracy": 15 ,
       "shootSound": "artillery",
+      "shootCone": 360,
+      "bullet": {
+        "type": "LightningBulletType",
+        "speed": 3,
+        "lifetime": 45,
+        "damage": 5,
+        "width": 0.5,
+        "height": 0.5,
+        "splashDamage": 5,
+        "splashDamageRadius": 5
+      },
       "shoot": {
         "shots": 2
-      },
-      "bullet": {
-        "type": "ArtilleryBulletType",
-        "speed": 2.5,
-        "lifetime": 70,
-        "damage": 50,
-        "width": 2,
-        "height": 4,
-        "splashDamage": 35,
-        "splashDamageRadius": 10
       }
     }
   ],
