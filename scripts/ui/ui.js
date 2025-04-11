@@ -123,7 +123,7 @@ const NewsDialog = () => {
 	const
 		urlNews = "https://raw.githubusercontent.com/Lysent/etigei-exile/refs/heads/main/news/" + Core.bundle.get("etigeox.news.file"),
 		urlDiscord = "https://discord.com/invite/TJKZgr6UDg",
-		urlWiki = "",
+		urlWiki = "https://revers.fandom.com/wiki/Revers_Wiki",
 		urlGithub = "https://github.com/Lysent/etigei-exile";
 
 	const load = () => {

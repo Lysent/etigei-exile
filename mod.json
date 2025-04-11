@@ -38,6 +38,7 @@
     "colony-core",
     "frontline-core",
     "ground-core",
+    "colonial-unloader",
     "mini-drill",
     "middle-drill",
     "greater-drill",
@@ -160,7 +161,29 @@
     "shielded-etgwall-big",
     "etigeum-mend-wall",
     "nihil",
+    "etigeum-sequencer",
 
-    "etigeum-sequencer"
+    "emiss1",
+    "emiss2-1",
+    "emiss2-2",
+    "emiss2-3",
+    "emiss3-1",
+    "emiss3-2",
+    "emiss3-3",
+    "emiss3-4",
+    "emiss3-5",
+    "miss1",
+    "miss2",
+    "miss3",
+    "miss4",
+    "miss5",
+    "miss6",
+    "miss7",
+    "miss8",
+    "miss9",
+    "miss10",
+    "missex13",
+    "missex14",
+    "miss-unknown"
   ]
 }
