@@ -1,3 +1,10 @@
+[gray] 04/11/2025
+[white] Updated the mod to Mindustry V8
+- Enabled Content Order for blocks in content tab, core database and building tab.
+- Uncapped loading station and loading dockyard limit
+- Rubiginosus maps now have icons
+- Re-enabled launch loadouts
+
 [gray] 03/04/2025
 [white] - Added new map: Shrouded Assault
 - Added environment tile: cold ice
