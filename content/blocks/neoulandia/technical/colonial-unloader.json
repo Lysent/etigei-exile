@@ -19,13 +19,6 @@
     "alumin/3",
     "silver/3"
   ],
-
-  "requirements": [
-    "tin/5000",
-    "alumin/5000",
-    "silver/5000"
-  ],
-  
-  "research": "sprite",
-  "alwaysUnlocked": true
+ 
+  "alwaysUnlocked": false
 }

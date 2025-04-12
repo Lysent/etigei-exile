@@ -9,11 +9,7 @@
   "flammability": 0,
   "explosiveness": 0,
   "charge": 0,
-  "radioactivity": 0,
+  "radioactivity": 0
 
-  "hiddenOnPlanets": [
-    "serpulo",
-    "erekir",
-    "Rubiginosus"
-  ]
+  
 }

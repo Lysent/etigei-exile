@@ -11,10 +11,6 @@
   "charge": 0,
   "radioactivity": 0,
 
-  "alwaysUnlocked": false,
-  "hiddenOnPlanets": [
-    "serpulo",
-    "erekir",
-    "Rubiginosus"
-  ]
+  "alwaysUnlocked": false
+  
 }

@@ -6,8 +6,8 @@ require("content/blocks/productionBlocks");
 require("content/misc/attributes");
 require("content/misc/vanilla");
 require("content/misc/bullets");
+//require("content/planets/planets");
 
 //require("content/tech/contentLoader");
 require("content/tech/tech");
-
 require("ui/ui");

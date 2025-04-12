@@ -12,11 +12,7 @@
   "radioactivity": 0,
   "buildable": "false",
 
-  "alwaysUnlocked": "true",
+  "alwaysUnlocked": "true"
 
-  "hiddenOnPlanets": [
-    "serpulo",
-    "erekir",
-    "Rubiginosus"
-  ]
+  
 }
