@@ -1,4 +1,6 @@
+//
 // Tech tree node attacher ripped off from the ContentParser
+//
 
 const chainNode = (parent, research) => {
     const node = new TechTree.TechNode(null, research.unlock, research.requirements || ItemStack.empty);
@@ -10,37 +12,51 @@ const chainNode = (parent, research) => {
         }
     }
 
-    //log("etigeox", "created tech node");
-
     if (research.planet) node.planet = Vars.content.getByName(ContentType.planet, research.planet);
 
-    //log("etigeox", "updated planet");
-
-    if (!parent.children.contains(node)) {
-        parent.children.add(node);
-    }
-
-    //log("etigeox", "childed node");
+    if (!parent.children.contains(node)) parent.children.add(node);
 
     //reparent the node
     node.parent = parent;
-
-    //log("etigeox", "reparented node");
 
     return node;
 };
 
 const addTechNode = (research) => {
-    const parent = TechTree.all.find(t => t !== undefined && t.content == research.parent && (t.planet !== null ? t.planet == research.planet : true));
-
-    //log("etigeox", "(potentially) found parent");
+    const parent = TechTree.all.find(t => t !== undefined && t.content == research.parent && (t.planet === null || t.planet == research.planet));
 
     const node = chainNode(parent, research);
 
     return node;
 };
 
+//
+// Adding one planet's tech tree to another
+//
+
+const fixRootPlanetData = () => {
+    Vars.content.planets().forEach(p => {
+        if (p.techTree === null) return;
+        if(p.techTree.planet === null) p.techTree.planet = p;
+    });
+    TechTree.roots.forEach(r => {
+        if (r.planet === null) log("etigeox", "found missing root-planet correspondance");
+    });
+}
+
+const addPlanetTechTree = (planet, targetTreePlanet) => {
+    const techTree = TechTree.roots.find(n => n.planet === targetTreePlanet);
+    techTree.addPlanet(planet);
+};
+
+//
+// Modifying tech trees
+//
 Events.on(ContentInitEvent, () => {
+    fixRootPlanetData();
+
+    addPlanetTechTree(Vars.content.planet("etigeox-Rubiginosus"), Vars.content.planet("serpulo"));
+
     // Serpulo
     addTechNode({
         parent: Vars.content.item("etigeox-refined-etigeum"),
