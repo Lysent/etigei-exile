@@ -25,28 +25,6 @@
   "allowLaunchSchematics": false,
   "addStartingItems": true,
 
-  "hiddenItems": [
-    "copper",
-    "lead",
-    "scrap",
-    "graphite",
-    "titanium",
-    "thorium",
-    "plastanium",
-    "phase-fabric",
-    "surge-alloy",
-    "spore-pod",
-    "blast-compound",
-    "pyratite",
-    "metaglass",
-    "beryllium",
-    "oxide",
-    "tungsten",
-    "carbide",
-    "fissile-matter",
-    "dormant-cyst"
-  ],
-
   "mesh": {
     "type": "NoiseMesh",
     "seed": 776636,
