@@ -93,9 +93,6 @@ const UpdateChecker = () => {
 			Core.bundle.format("etigeox.update", updateBuild), "@etigeox.update.description",
 			"@ok", "@cancel",
 			() => {
-				Vars.ui.showCustomConfirm("", "", "@ok", "@cancel",
-					() => Core.app.exit(), () => { }
-				);
 				Vars.ui.mods.githubImportMod("Lysent/etigei-exile", false);
 				updateAvailable = false;
 			},
