@@ -10,7 +10,9 @@
   "explosiveness": 0,
   "charge": 0,
   "radioactivity": 0,
-  "buildable": "false"
+  "buildable": "false",
 
-  
+  "shownPlanets": [
+    "Neoulandia"
+  ]
 }

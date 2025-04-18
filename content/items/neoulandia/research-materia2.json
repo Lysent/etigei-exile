@@ -11,6 +11,10 @@
   "charge": 0,
   "radioactivity": 0,
 
-  "alwaysUnlocked": false
+  "alwaysUnlocked": false,
+
+  "shownPlanets": [
+    "Neoulandia"
+  ]
   
 }
