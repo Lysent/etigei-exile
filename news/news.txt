@@ -1,3 +1,10 @@
+[gray] 04/16/2025
+[white] - Added new difficulties: Celestial and Totality
+- Updated title screen and banner
+- Added link to the Wiki
+- Fixed Rubiginosus and Neoulandia item / block visibility issues
+- Neoulandia maps now have temporary icons
+
 [gray] 04/11/2025
 [white] Updated the mod to Mindustry V8
 - Enabled Content Order for blocks in content tab, core database and building tab.
