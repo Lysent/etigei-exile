@@ -1,6 +1,5 @@
 [gray] 04/16/2025
-[white] - Added new difficulties: Celestial and Totality
-- Updated title screen and banner
+[white] - Updated title screen and banner
 - Added link to the Wiki
 - Fixed Rubiginosus and Neoulandia item / block visibility issues
 - Neoulandia maps now have temporary icons
