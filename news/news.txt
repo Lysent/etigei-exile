@@ -3,6 +3,7 @@
 - Added link to the Wiki
 - Fixed Rubiginosus and Neoulandia item / block visibility issues
 - Neoulandia maps now have temporary icons
+- Re-disabled launch loadouts
 
 [gray] 04/11/2025
 [white] Updated the mod to Mindustry V8
