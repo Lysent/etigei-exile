@@ -19,7 +19,7 @@
 - Fixed tutorial map
 
 [gray] 20/03/2025
-[white] - Fully revamped map: Precursory Riveer
+[white] - Fully revamped map: Precursory River
 - Revamped environment of maps: Scouting Party, Forking Pathways, Serorjoen Mountains, Collier Chamber, Ice Spikes, Waterfall
 
 [gray] 13/03/2025
