@@ -1,135 +1,38 @@
 [gray] 04/16/2025
-[white] - Updated title screen and banner
-- Added link to the Wiki
-- Fixed Rubiginosus and Neoulandia item / block visibility issues
-- Neoulandia maps now have temporary icons
+[white] - Écran titre et bannière mis à jour
+- Lien vers le Wiki ajouté
+- Correction des problèmes de visibilité des objets/blocs de Rubiginosus et de la Neoulandie
+- Les secteurs de la Neoulandie ont désormais des icônes temporaires
 
 [gray] 04/11/2025
-[white] Updated the mod to Mindustry V8
-- Enabled Content Order for blocks in content tab, core database and building tab.
-- Uncapped loading station and loading dockyard limit
-- Rubiginosus maps now have icons
-- Re-enabled launch loadouts
+[white] Mise à jour du mod pour Mindustry V8
+- Ordre du contenu activé pour les blocs dans l'onglet contenu et les onglets de construction
+- Limites d'unité lévées pour les quais et ports de chargements.
+- Les secteurs de Rubiginosus ont désormais des icônes.
 
 [gray] 03/04/2025
-[white] - Added new map: Shrouded Assault
-- Added environment tile: cold ice
-- Harvesters work at 50% the efficiency of blue ice on cold ice.
-- Fixed tutorial map
+[white] - Nouvelle secteur : Assaut mirroir
+- Glace froide ajoutée
+- Les extracteur d'eau fonctionnent à 50 % de l'efficacité de la glace bleue sur la glace froide
+- Correction du secteur de tutoriel
 
 [gray] 20/03/2025
-[white] - Fully revamped map: Precursory Riveer
-- Revamped environment of maps: Scouting Party, Forking Pathways, Serorjoen Mountains, Collier Chamber, Ice Spikes, Waterfall
+[white] - Nouvelle version du secteur: Rivière Précurseur
+- Nouveaux environnements des secteurs : Mission de reconnaissance, Chemins bifurqués, Montagnes serorjoennes, Chambre Collier, Pointes de glace, Cascade
 
 [gray] 13/03/2025
-[white] - Fully revamped tutorial map: Landing Ground
-- Added new environment tiles and blocks
-- Added sectors and geographical maps of Neoulandia menu
-- Added update checking to the update button
-- Fixed the team colour of destructible ice
+[white] - Nouvelle version du secteur de tutoriel
+- Nouvelles tuiles d’environnement et nouveaux blocs ajoutés
+- Secteurs et cartes géographiques du menu Neoulandie ajoutés
+- Vérification des mises à jour ajoutée au bouton de mise à jour
+- Couleur d’équipe de la glace destructible corrigée
 
 [gray] 03/03/2025
-[white] - Balanced turrets: creneau, machicoulis, parapet, redoubt, tour
-- Balanced walls: barrier, platinum wall, adaptive wall
-- Balanced units: Harfang, Snapdragon, Boechera, Fireweed, Trillium, Praetor, Heavy Strix
-- Updated Large Storage Unit sprite
-- Reordered Nickel and Platinum to be in line with other base materials
-- Revamped environment of map: Ice Spikes
+[white] - Tourelles rééquilibrées : créneau, mâchicoulis, parapet, redoute, tour
+- Murs rééquilibrés
+- Unités rééquilibrées
+- Nouvelle apparence l’unité de stockage grande taille
+- Ordre du nickel et platine réorganisés pour correspondre aux autres matériaux de base
+- Nouvel environment du secteur: Pointes de glace
 
-[gray] 21/02/2025
-[white] - Added new map: Collier Chamber
-- Added update and changelog menu buttons on title screen
-- Added new blocks: Capsule Launcher and Mining Core
-- Added new unit: Aedile
-
-- Changed Neoulandia to allow starting loadouts (Start with more resources)
-- Revamped map Serorjoen Mountains to use the new underground core.
-- Buffed Passage
-- Nerfed Loading Dockyard
-- Buffed Colony Core and Frontline Core by lowering costs
-- Buffed Oil Generator (Serpulo)
-
-[gray] 11/02/2025
-[white] - Timber (EDT) is now a required dependency
-Existing timber in cores or containers will be deleted; timber can still be acquired through breaking trees.
-
-Added 20 blocks, 3 items, 2 units, and 1 map:
-- Added greater ore, elite research materials, nickel, and platinum
-- Adds greater extractor and mineral purifier
-- Adds slag melter and smeltery
-- Adds loading dockyard (T2), platinum conveyor, platinum bridge, platinum junction and router.s
-- Adds research consortium, mender, nickel battery, platinum walls, incinerator
-- Adds turrets: battlement, loophole, machiolation, redoubt
-- Adds map: Waterfall
-- Adds units: Freight and Heavy Strix
-
-- Docks Loading Station now ignores the unit limit.
-- Unit limit nerfed
-- Frontline core now increases unit limit instead of Colony core.
-- Harfangs can no longer be given the command to mine
-- Fixed Harfang shooting sound
-- Neoulandia tech tree changes
-- Updated mod description
-
-[gray] 17/01/2025
-[white] - Revamped tutorial mission
-
- - Etigeum conveyor rebalanced
- - Passage speed nerfed
-
-[gray] 16/01/2025
-[white] - Mobile version fix
-
-[gray] 13/01/2025
-[white] - Added startup UI
-
-[gray] 19/12/2024
-[white] - Added map: Ice Spikes
- - Buffed Tour turret
- - Buffed Composite Walls
- - Fixed unit sounds
- - Fixed turret sounds
-
-[gray] 14/12/2024
-[white] - Fixed Serorjoen Mountains balance
- - Implemented French Translation
-
-[gray] 09/12/2024
-[white] - Added sector Serorjoen Mountains
- - Added destructible environment blocks for Serorjoen Mountains
- - Added Important Support Beams for Serorjoen Mountains
-
-[gray] 08/12/2024
-[white] - Buffed Harfang Cargo item limit and speed
- - Buffed Boechera unit speed
- - Nerfed research material reward amount
- - Nerfed drill and refineries
- - Fixed Passage's absurd transfer speed
- - Rebalanced unit costs
- - Rebalanced wall costs
-
- - Rebalanced waves on the map Scouting Party
- - Rebalanced block costs on maps outside of Landing Ground
-
-[gray] 05/12/2024
-[white] - Solar Windturbine now spins
- - Buffed Fuel Heater output
- - Nerfed Electric Heater power consumption
- - Fuel Generator rebalance
- - Fixed Microchip Factory sprite
-
- - Moved colonial unloaders away from core to allow warehouses
- - Fixed mining orders for Rockcress and Harfang
- - Patched research material cheesing on Landing Ground
-(Only playing newer maps or resetting the map will update these three last changes)
-
-[gray] 03/12/2024
-[white] *Release Version*
- - Neoulandia (4 sectors)
- - Rubiginosus (12 sectors)
-
- - Phase 1 Neoulandia Tech Tree Content
- - Machine, Transports, and Microchip factories
- - Liquids content
- - T1 Units
- - Some more
+TODO
