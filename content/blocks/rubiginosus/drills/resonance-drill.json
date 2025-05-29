@@ -1,0 +1,24 @@
+{
+  "localizedName": "Resonance Drill",
+  "description": "Small and precise drill.",
+  "health": 80,
+  "type": "drill",
+  "size": 1,
+
+  "tier": 4,
+  "drillTime": 120,
+  "warmupSpeed": 1,
+  "rotateSpeed": 2,
+  "hardnessDrillMultiplier": 1,
+  "hasLiquids": "false",
+  "hasPower": "false",
+
+  "requirements": [
+    "copper/10",
+    "lead/8",
+    "titanium/2"
+  ],
+
+  "category": "production",
+  "research": "pneumatic-drill"
+}
