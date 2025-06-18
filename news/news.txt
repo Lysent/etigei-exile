@@ -1,5 +1,5 @@
 [gray] 04/16/2025
-[white] - Updated title screen and banner
+[white]- Updated title screen and banner
 - Added link to the Wiki
 - Fixed Rubiginosus and Neoulandia item / block visibility issues
 - Neoulandia maps now have temporary icons
@@ -13,24 +13,24 @@
 - Re-enabled launch loadouts
 
 [gray] 03/04/2025
-[white] - Added new map: Shrouded Assault
+[white]- Added new map: Shrouded Assault
 - Added environment tile: cold ice
 - Harvesters work at 50% the efficiency of blue ice on cold ice.
 - Fixed tutorial map
 
 [gray] 20/03/2025
-[white] - Fully revamped map: Precursory River
+[white]- Fully revamped map: Precursory River
 - Revamped environment of maps: Scouting Party, Forking Pathways, Serorjoen Mountains, Collier Chamber, Ice Spikes, Waterfall
 
 [gray] 13/03/2025
-[white] - Fully revamped tutorial map: Landing Ground
+[white]- Fully revamped tutorial map: Landing Ground
 - Added new environment tiles and blocks
 - Added sectors and geographical maps of Neoulandia menu
 - Added update checking to the update button
 - Fixed the team colour of destructible ice
 
 [gray] 03/03/2025
-[white] - Balanced turrets: creneau, machicoulis, parapet, redoubt, tour
+[white]- Balanced turrets: creneau, machicoulis, parapet, redoubt, tour
 - Balanced walls: barrier, platinum wall, adaptive wall
 - Balanced units: Harfang, Snapdragon, Boechera, Fireweed, Trillium, Praetor, Heavy Strix
 - Updated Large Storage Unit sprite
@@ -38,7 +38,7 @@
 - Revamped environment of map: Ice Spikes
 
 [gray] 21/02/2025
-[white] - Added new map: Collier Chamber
+[white]- Added new map: Collier Chamber
 - Added update and changelog menu buttons on title screen
 - Added new blocks: Capsule Launcher and Mining Core
 - Added new unit: Aedile
@@ -73,35 +73,35 @@ Added 20 blocks, 3 items, 2 units, and 1 map:
 - Updated mod description
 
 [gray] 17/01/2025
-[white] - Revamped tutorial mission
+[white]- Revamped tutorial mission
 
  - Etigeum conveyor rebalanced
  - Passage speed nerfed
 
 [gray] 16/01/2025
-[white] - Mobile version fix
+[white]- Mobile version fix
 
 [gray] 13/01/2025
-[white] - Added startup UI
+[white]- Added startup UI
 
 [gray] 19/12/2024
-[white] - Added map: Ice Spikes
+[white]- Added map: Ice Spikes
  - Buffed Tour turret
  - Buffed Composite Walls
  - Fixed unit sounds
  - Fixed turret sounds
 
 [gray] 14/12/2024
-[white] - Fixed Serorjoen Mountains balance
+[white]- Fixed Serorjoen Mountains balance
  - Implemented French Translation
 
 [gray] 09/12/2024
-[white] - Added sector Serorjoen Mountains
+[white]- Added sector Serorjoen Mountains
  - Added destructible environment blocks for Serorjoen Mountains
  - Added Important Support Beams for Serorjoen Mountains
 
 [gray] 08/12/2024
-[white] - Buffed Harfang Cargo item limit and speed
+[white]- Buffed Harfang Cargo item limit and speed
  - Buffed Boechera unit speed
  - Nerfed research material reward amount
  - Nerfed drill and refineries
@@ -113,7 +113,7 @@ Added 20 blocks, 3 items, 2 units, and 1 map:
  - Rebalanced block costs on maps outside of Landing Ground
 
 [gray] 05/12/2024
-[white] - Solar Windturbine now spins
+[white]- Solar Windturbine now spins
  - Buffed Fuel Heater output
  - Nerfed Electric Heater power consumption
  - Fuel Generator rebalance
