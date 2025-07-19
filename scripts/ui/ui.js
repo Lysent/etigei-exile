@@ -6,7 +6,6 @@ const linkButton = url => () => {
 };
 
 // Updater
-
 let updateText = "@etigeox.news.update"
 let buttonUpdateText = ""
 let updateButtonSize = {
@@ -30,7 +29,7 @@ const UpdateChecker = () => {
 					width: 200,
 					height: 60
 				}
-			}
+			};
 
 			Vars.ui.menuGroup["fill(arc.func.Cons)"](c => {
 				c.bottom().left();
@@ -111,7 +110,6 @@ const UpdateChecker = () => {
 }
 
 // Startup UI
-
 const NewsDialog = () => {
 	let dialog, news, checker;
 
@@ -129,6 +127,7 @@ const NewsDialog = () => {
 		dialog.addCloseListener();
 
 		MapButton();
+		AddonsButton();
 		MainMenu();
 		checker = UpdateChecker();
 		checker.init();
@@ -172,7 +171,6 @@ const NewsDialog = () => {
 	};
 
 	const loadButtons = () => {
-		//Check if not on mobile Landscape mode
 		if (true || !(Vars.mobile && !Core.graphics.isPortrait())) {
 			dialog.cont.row();
 
@@ -225,7 +223,6 @@ const NewsDialog = () => {
 };
 
 // Map UI
-
 const MapButton = () => {
 	Vars.ui.menuGroup["fill(arc.func.Cons)"](c => {
 		c.bottom().left();
@@ -281,8 +278,19 @@ const MapDialog = (mapname, dim) => {
 	SectorDialog.show();
 };
 
-// Startup
+// Addons Menu
+const AddonsButton = () => {
+	Vars.ui.menuGroup["fill(arc.func.Cons)"](c => {
+		c.top().right();
+		c.row();
+		c["table(arc.func.Cons)"](t => {
+			t.defaults().size(128 * 4, 64).pad(3);
+			t.button("@close", Icon.cancel, () => dialog.hide());
+		}).size(150, 75).padTop(200).padRight(65);
+	});
+}
 
+// Startup
 Events.on(ClientLoadEvent, () => {
 	const newsInstance = NewsDialog();
 	newsInstance.load();
