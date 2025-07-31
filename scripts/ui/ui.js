@@ -304,11 +304,16 @@ function AddonsButton() {
 			var modName = mods[entry.index];
 			var mod = Vars.mods.getMod(modName);
 
-			if (mod != null && mod.enabled() === false) {
-				entry.button.get().setColor(255, 0, 0, 1);
+			if (mod != null) {
+				if (mod.enabled() === false) {
+					entry.button.get().setColor(255, 0, 0, 1);
+				} else {
+					entry.button.get().setColor(0, 255, 0, 1);
+				}
 			} else {
-				entry.button.get().setColor(0, 255, 0, 1);
+				entry.button.get().setColor(255, 0, 0, 1);
 			}
+
 		}
 	}
 
