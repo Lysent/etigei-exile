@@ -6,19 +6,19 @@
   "size": 1,
 
   "tier": 4,
-  "drillTime": 120,
+  "drillTime": 240,
   "warmupSpeed": 1,
   "rotateSpeed": 2,
-  "hardnessDrillMultiplier": 1,
+  "hardnessDrillMultiplier": 50,
   "hasLiquids": "false",
   "hasPower": "false",
 
   "requirements": [
-    "copper/10",
-    "lead/8",
-    "titanium/2"
+    "lead/24",
+    "titanium/12",
+    "thorium/8"
   ],
 
   "category": "production",
-  "research": "pneumatic-drill"
+  "research": "laser-drill"
 }
