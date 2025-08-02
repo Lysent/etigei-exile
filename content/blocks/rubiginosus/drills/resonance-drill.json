@@ -1,7 +1,7 @@
 {
   "localizedName": "Resonance Drill",
   "description": "Small and precise drill.",
-  "health": 80,
+  "health": 40,
   "type": "drill",
   "size": 1,
 
@@ -14,9 +14,10 @@
   "hasPower": "false",
 
   "requirements": [
-    "lead/24",
-    "titanium/12",
-    "thorium/8"
+    "lead/28",
+    "titanium/20",
+    "thorium/12",
+    "plastanium/2"
   ],
 
   "category": "production",

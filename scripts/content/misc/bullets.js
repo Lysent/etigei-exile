@@ -32,5 +32,10 @@ const graphiteBulletSalvo = extend(BasicBulletType, {
     splashDamageRadius: 0,
 });
 
+const blastScathe = Blocks.scathe.ammoTypes.get(Vars.content.item("carbide")).copy();
+blastScathe.spawnUnit.maxRange *= 0.5;
+blastScathe.spawnUnit.lifetime *= 0.5;
+
 Blocks.salvo.ammoTypes.put(Vars.content.item("scrap"), scrapBulletSalvo);
 Blocks.salvo.ammoTypes.put(Vars.content.item("graphite"), graphiteBulletSalvo);
+Blocks.scathe.ammoTypes.put(Vars.content.item("blast-compound"), blastScathe);
