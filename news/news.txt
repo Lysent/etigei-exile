@@ -1,5 +1,6 @@
 [gray] 07/31/2025
-[white]- Added extra research materials to Precursory River to prevent softlocks.
+[white]- Added new bonus map to the Rubiginosus campaign: Mission 15 - Lightning Snakes
+- Added extra research materials to Precursory River to prevent softlocks.
 
 [gray] 04/16/2025
 [white]- Updated title screen and banner
